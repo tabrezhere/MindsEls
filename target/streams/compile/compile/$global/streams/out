@@ -1,0 +1,63 @@
+[0m[[0mdebug[0m] [0mInvalidating C:\Users\tabrez\.ivy2\cache\com.typesafe.play\play-json_2.10\jars\play-json_2.10-2.3.8.jar: class play.api.libs.json.Json$ now provided by C:\Users\lenovo\.ivy2\cache\com.typesafe.play\play-json_2.10\jars\play-json_2.10-2.3.8.jar[0m
+[0m[[0mdebug[0m] [0mInvalidating C:\Users\tabrez\.ivy2\cache\com.typesafe.play\play-jdbc_2.10\jars\play-jdbc_2.10-2.3.8.jar: class play.api.db.DB$ now provided by C:\Users\lenovo\.ivy2\cache\com.typesafe.play\play-jdbc_2.10\jars\play-jdbc_2.10-2.3.8.jar[0m
+[0m[[0mdebug[0m] [0mInvalidating C:\Users\tabrez\.ivy2\cache\com.mohiva\play-silhouette_2.10\jars\play-silhouette_2.10-1.1-SNAPSHOT.jar: class com.mohiva.play.silhouette.core.EventBus now provided by C:\Users\lenovo\.ivy2\cache\com.mohiva\play-silhouette_2.10\jars\play-silhouette_2.10-1.1-SNAPSHOT.jar[0m
+[0m[[0mdebug[0m] [0mInvalidating C:\Users\tabrez\.ivy2\cache\com.google.inject\guice\jars\guice-4.0-beta4.jar: class com.google.inject.binder.LinkedBindingBuilder now provided by C:\Users\lenovo\.ivy2\cache\com.google.inject\guice\jars\guice-4.0-beta4.jar[0m
+[0m[[0mdebug[0m] [0mInvalidating C:\Users\tabrez\.ivy2\cache\net.codingwell\scala-guice_2.10\jars\scala-guice_2.10-4.0.0-beta4.jar: class net.codingwell.scalaguice.ScalaModule$ScalaScopedBindingBuilder now provided by C:\Users\lenovo\.ivy2\cache\net.codingwell\scala-guice_2.10\jars\scala-guice_2.10-4.0.0-beta4.jar[0m
+[0m[[0mdebug[0m] [0mInvalidating C:\Users\tabrez\.ivy2\cache\com.amazonaws\aws-java-sdk-ses\jars\aws-java-sdk-ses-1.10.1.jar: class com.amazonaws.services.simpleemail.model.Body now provided by C:\Users\lenovo\.ivy2\cache\com.amazonaws\aws-java-sdk-ses\jars\aws-java-sdk-ses-1.10.1.jar[0m
+[0m[[0mdebug[0m] [0mInvalidating C:\Users\tabrez\.ivy2\cache\com.amazonaws\aws-java-sdk-core\jars\aws-java-sdk-core-1.10.1.jar: class com.amazonaws.regions.Region now provided by C:\Users\lenovo\.ivy2\cache\com.amazonaws\aws-java-sdk-core\jars\aws-java-sdk-core-1.10.1.jar[0m
+[0m[[0mdebug[0m] [0mInvalidating C:\Users\tabrez\.ivy2\cache\com.typesafe.play\play_2.10\jars\play_2.10-2.3.8.jar: class play.api.templates.PlayMagic$ now provided by C:\Users\lenovo\.ivy2\cache\com.typesafe.play\play_2.10\jars\play_2.10-2.3.8.jar[0m
+[0m[[0mdebug[0m] [0mInvalidating C:\Users\tabrez\.ivy2\cache\org.mindrot\jbcrypt\jars\jbcrypt-0.3m.jar: class org.mindrot.jbcrypt.BCrypt now provided by C:\Users\lenovo\.ivy2\cache\org.mindrot\jbcrypt\jars\jbcrypt-0.3m.jar[0m
+[0m[[0mdebug[0m] [0mInvalidating C:\Users\tabrez\.ivy2\cache\com.amazonaws\aws-java-sdk-s3\jars\aws-java-sdk-s3-1.10.1.jar: class com.amazonaws.services.s3.AmazonS3Client now provided by C:\Users\lenovo\.ivy2\cache\com.amazonaws\aws-java-sdk-s3\jars\aws-java-sdk-s3-1.10.1.jar[0m
+[0m[[0mdebug[0m] [0mInvalidating C:\Users\tabrez\.ivy2\cache\com.typesafe.akka\akka-actor_2.10\jars\akka-actor_2.10-2.3.4.jar: class akka.actor.Props$ now provided by C:\Users\lenovo\.ivy2\cache\com.typesafe.akka\akka-actor_2.10\jars\akka-actor_2.10-2.3.4.jar[0m
+[0m[[0mdebug[0m] [0mInvalidating C:\Users\tabrez\.sbt\boot\scala-2.10.4\lib\scala-library.jar: class scala.Product now provided by C:\Users\lenovo\.sbt\boot\scala-2.10.4\lib\scala-library.jar[0m
+[0m[[0mdebug[0m] [0mInvalidating C:\Users\tabrez\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.8.1.jar: class org.joda.time.DateTime now provided by C:\Users\lenovo\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.8.1.jar[0m
+[0m[[0mdebug[0m] [0mInvalidating C:\Program Files\Java\jre7\lib\rt.jar: class java.lang.Object now provided by C:\Program Files\Java\jdk1.7.0_71\jre\lib\rt.jar[0m
+[0m[[0mdebug[0m] [0mInvalidating C:\Users\tabrez\.ivy2\cache\javax.mail\mail\jars\mail-1.4.1.jar: class javax.mail.Message now provided by C:\Users\lenovo\.ivy2\cache\javax.mail\mail\jars\mail-1.4.1.jar[0m
+[0m[[0mdebug[0m] [0mInvalidating C:\Users\tabrez\.ivy2\cache\com.typesafe.play\anorm_2.10\jars\anorm_2.10-2.3.8.jar: class anorm.package$ now provided by C:\Users\lenovo\.ivy2\cache\com.typesafe.play\anorm_2.10\jars\anorm_2.10-2.3.8.jar[0m
+[0m[[0mdebug[0m] [0mInvalidating C:\Users\tabrez\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar: class javax.inject.Inject now provided by C:\Users\lenovo\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar[0m
+[0m[[0mdebug[0m] [0mInvalidating C:\Users\tabrez\.ivy2\cache\com.typesafe.play\play-functional_2.10\jars\play-functional_2.10-2.3.8.jar: class play.api.libs.functional.syntax.package$ now provided by C:\Users\lenovo\.ivy2\cache\com.typesafe.play\play-functional_2.10\jars\play-functional_2.10-2.3.8.jar[0m
+[0m[[0mdebug[0m] [0mInvalidating C:\Users\tabrez\.ivy2\cache\org.codemonkey.simplejavamail\simple-java-mail\jars\simple-java-mail-2.1.jar: class org.codemonkey.simplejavamail.Mailer now provided by C:\Users\lenovo\.ivy2\cache\org.codemonkey.simplejavamail\simple-java-mail\jars\simple-java-mail-2.1.jar[0m
+[0m[[0mdebug[0m] [0mInvalidating C:\Users\tabrez\.ivy2\cache\com.typesafe.play\twirl-api_2.10\jars\twirl-api_2.10-1.0.2.jar: class play.twirl.api.BaseScalaTemplate now provided by C:\Users\lenovo\.ivy2\cache\com.typesafe.play\twirl-api_2.10\jars\twirl-api_2.10-1.0.2.jar[0m
+java.io.IOException: The device is not ready
+	at java.io.WinNTFileSystem.canonicalize0(Native Method)
+	at java.io.Win32FileSystem.canonicalize(Win32FileSystem.java:414)
+	at java.io.File.getCanonicalPath(File.java:618)
+	at sbt.inc.IncrementalCommon$$anonfun$externalBinaryModified$1.entryModified$1(Incremental.scala:343)
+	at sbt.inc.IncrementalCommon$$anonfun$externalBinaryModified$1.dependencyModified$1(Incremental.scala:362)
+	at sbt.inc.IncrementalCommon$$anonfun$externalBinaryModified$1.apply(Incremental.scala:367)
+	at sbt.inc.IncrementalCommon$$anonfun$externalBinaryModified$1.apply(Incremental.scala:334)
+	at scala.collection.TraversableLike$$anonfun$filter$1.apply(TraversableLike.scala:264)
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+	at scala.collection.MapLike$DefaultKeySet.foreach(MapLike.scala:174)
+	at scala.collection.TraversableLike$class.filter(TraversableLike.scala:263)
+	at scala.collection.AbstractTraversable.filter(Traversable.scala:105)
+	at sbt.inc.IncrementalCommon.changedInitial(Incremental.scala:204)
+	at sbt.inc.Incremental$.compile(Incremental.scala:29)
+	at sbt.inc.IncrementalCompile$.apply(Compile.scala:27)
+	at sbt.compiler.AggressiveCompile.compile2(AggressiveCompile.scala:157)
+	at sbt.compiler.AggressiveCompile.compile1(AggressiveCompile.scala:71)
+	at sbt.compiler.AggressiveCompile.apply(AggressiveCompile.scala:46)
+	at sbt.Compiler$.apply(Compiler.scala:75)
+	at sbt.Compiler$.apply(Compiler.scala:66)
+	at sbt.Defaults$.sbt$Defaults$$compileTaskImpl(Defaults.scala:770)
+	at sbt.Defaults$$anonfun$compileTask$1.apply(Defaults.scala:762)
+	at sbt.Defaults$$anonfun$compileTask$1.apply(Defaults.scala:762)
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:42)
+	at sbt.std.Transform$$anon$4.work(System.scala:64)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237)
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237)
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18)
+	at sbt.Execute.work(Execute.scala:244)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237)
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237)
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160)
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+[0m[[31merror[0m] [0m(compile:[31mcompile[0m) java.io.IOException: The device is not ready[0m

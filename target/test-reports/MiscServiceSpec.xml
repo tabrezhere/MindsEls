@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuite hostname="GravPC-user3" name="MiscServiceSpec" tests="1" errors="1" failures="0" time="-0.001">
+                <properties> <property name="jline.esc.timeout" value="0"/><property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/><property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_60\jre\bin"/><property name="java.vm.version" value="24.60-b09"/><property name="activator.home" value="//C:/typesafe-activator-1.2.12/activator-1.2.12"/><property name="java.vm.vendor" value="Oracle Corporation"/><property name="java.vendor.url" value="http://java.oracle.com/"/><property name="path.separator" value=";"/><property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/><property name="file.encoding.pkg" value="sun.io"/><property name="user.country" value="US"/><property name="user.script" value=""/><property name="sun.java.launcher" value="SUN_STANDARD"/><property name="sun.os.patch.level" value="Service Pack 1"/><property name="java.vm.specification.name" value="Java Virtual Machine Specification"/><property name="user.dir" value="C:\Play Workspace\Eonline"/><property name="java.runtime.version" value="1.7.0_60-b19"/><property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/><property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_60\jre\lib\endorsed"/><property name="os.arch" value="amd64"/><property name="java.io.tmpdir" value="C:\Users\Admin\AppData\Local\Temp\"/><property name="line.separator" value="
+"/><property name="java.vm.specification.vendor" value="Oracle Corporation"/><property name="user.variant" value=""/><property name="os.name" value="Windows 7"/><property name="sun.jnu.encoding" value="Cp1252"/><property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_60\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.7.0_60\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\apache-maven-3.2.2\bin;C:\Program Files\Java\jdk1.7.0_60\bin;C:\Program Files (x86)\scala\bin;C:\play-2.2.6;C:\Program Files (x86)\sbt\\bin;C:\typesafe-activator-1.2.12\activator-1.2.12;C:\Program Files (x86)\Git\bin;."/><property name="java.specification.name" value="Java Platform API Specification"/><property name="java.class.version" value="51.0"/><property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/><property name="os.version" value="6.1"/><property name="user.home" value="C:\Users\Admin"/><property name="user.timezone" value="Asia/Calcutta"/><property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/><property name="file.encoding" value="Cp1252"/><property name="java.specification.version" value="1.7"/><property name="java.class.path" value="C:\typesafe-activator-1.2.12\activator-1.2.12\activator-launch-1.2.12.jar"/><property name="user.name" value="Admin"/><property name="jline.shutdownhook" value="false"/><property name="java.vm.specification.version" value="1.7"/><property name="sun.java.command" value="C:\typesafe-activator-1.2.12\activator-1.2.12\activator-launch-1.2.12.jar"/><property name="java.home" value="C:\Program Files\Java\jdk1.7.0_60\jre"/><property name="sun.arch.data.model" value="64"/><property name="user.language" value="en"/><property name="java.specification.vendor" value="Oracle Corporation"/><property name="awt.toolkit" value="sun.awt.windows.WToolkit"/><property name="java.vm.info" value="mixed mode"/><property name="java.version" value="1.7.0_60"/><property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_60\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/><property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.7.0_60\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_60\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_60\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_60\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_60\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_60\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_60\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_60\jre\classes"/><property name="java.vendor" value="Oracle Corporation"/><property name="file.separator" value="\"/><property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/><property name="sun.io.unicode.encoding" value="UnicodeLittle"/><property name="sun.cpu.endian" value="little"/><property name="sun.desktop" value="windows"/><property name="sun.cpu.isalist" value="amd64"/>
+        </properties>
+                <testcase classname="MiscServiceSpec" name="(It is not a test)" time="-0.001"> <error message="Guice configuration errors:
+
+1) No implementation for models.services.MiscService was bound.
+  while locating models.services.MiscService
+    for parameter 1 at controllers.MiscController.&lt;init&gt;(MiscController.scala:17)
+  while locating controllers.MiscController
+
+1 error" type="sbt.ForkMain$ForkError">sbt.ForkMain$ForkError: Guice configuration errors:
+
+1) No implementation for models.services.MiscService was bound.
+  while locating models.services.MiscService
+    for parameter 1 at controllers.MiscController.&lt;init&gt;(MiscController.scala:17)
+  while locating controllers.MiscController
+
+1 error
+	at com.google.inject.internal.InjectorImpl.getProvider(InjectorImpl.java:1026)
+	at com.google.inject.internal.InjectorImpl.getProvider(InjectorImpl.java:985)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1035)
+	at Global$.getControllerInstance(Global.scala:42)
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$14.apply(routes_routing.scala:94)
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$14.apply(routes_routing.scala:94)
+	at play.core.Router$HandlerInvokerFactory$$anon$13$$anon$14.call(Router.scala:217)
+	at play.core.Router$Routes$TaggingInvoker.call(Router.scala:464)
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$2.apply(routes_routing.scala:94)
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$2.apply(routes_routing.scala:94)
+	at play.core.Router$Routes$class.call(Router.scala:326)
+	at Routes$.call(routes_routing.scala:16)
+	at Routes$$anonfun$routes$1.applyOrElse(routes_routing.scala:93)
+	at Routes$$anonfun$routes$1.applyOrElse(routes_routing.scala:81)
+	at play.api.test.FakeApplication$$anon$3$$anon$2$$anonfun$applyOrElse$2.apply(Fakes.scala:243)
+	at play.api.test.FakeApplication$$anon$3$$anon$2$$anonfun$applyOrElse$2.apply(Fakes.scala:243)
+	at play.api.test.FakeApplication$$anon$3$$anon$2.applyOrElse(Fakes.scala:243)
+	at play.api.test.FakeApplication$$anon$3$$anon$2.applyOrElse(Fakes.scala:241)
+	at play.core.Router$Routes$class.handlerFor(Router.scala:454)
+	at play.api.test.FakeApplication$$anon$3.handlerFor(Fakes.scala:234)
+	at play.api.GlobalSettings$$anonfun$onRouteRequest$1$$anonfun$apply$1.apply(GlobalSettings.scala:128)
+	at play.api.GlobalSettings$$anonfun$onRouteRequest$1$$anonfun$apply$1.apply(GlobalSettings.scala:127)
+	at play.api.GlobalSettings$$anonfun$onRouteRequest$1.apply(GlobalSettings.scala:126)
+	at play.api.GlobalSettings$$anonfun$onRouteRequest$1.apply(GlobalSettings.scala:126)
+	at play.api.GlobalSettings$class.onRouteRequest(GlobalSettings.scala:126)
+	at Global$.onRouteRequest(Global.scala:22)
+	at play.api.test.RouteInvokers$class.route(Helpers.scala:272)
+	at MiscServiceSpec.route(MiscServiceSpec.scala:10)
+	at play.api.test.RouteInvokers$class.route(Helpers.scala:298)
+	at MiscServiceSpec.route(MiscServiceSpec.scala:10)
+	at play.api.test.RouteInvokers$class.route(Helpers.scala:305)
+	at MiscServiceSpec.route(MiscServiceSpec.scala:10)
+	at MiscServiceSpec$$anonfun$2$$anon$1$delayedInit$body.apply(MiscServiceSpec.scala:13)
+	at play.api.test.WithApplication$$anonfun$around$1.apply(Specs.scala:23)
+	at play.api.test.WithApplication$$anonfun$around$1.apply(Specs.scala:23)
+	at play.api.test.PlayRunners$class.running(Helpers.scala:49)
+	at play.api.test.Helpers$.running(Helpers.scala:403)
+	at play.api.test.WithApplication.around(Specs.scala:23)
+	at play.api.test.WithApplication.delayedInit(Specs.scala:20)
+	at MiscServiceSpec$$anonfun$2$$anon$1.&lt;init&gt;(MiscServiceSpec.scala:12)
+	at MiscServiceSpec$$anonfun$2.apply(MiscServiceSpec.scala:12)
+	at MiscServiceSpec$$anonfun$2.apply(MiscServiceSpec.scala:12)
+</error>
+                    </testcase>
+                <system-out></system-out>
+                <system-err></system-err>
+                </testsuite>

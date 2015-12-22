@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="theApp">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MindsEls- AngularJS Page</title>
+<link rel="stylesheet" href='@routes.Assets.at("stylesheets/main.css")'>
+
+<link rel="stylesheet" href='@routes.Assets.at("lib/bootstrap/css/bootstrap.css")'>
+<link rel="stylesheet" href='@routes.Assets.at("lib/bootstrap/css/bootstrap-theme.min.css")'>
+<link rel="stylesheet" href='@routes.Assets.at("lib/bootstrap/css/bootstrap-datetimepicker.css")'>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script type="text/javascript" src='@routes.Assets.at("lib/bootstrap/js/bootstrap-datetimepicker.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("lib/jquery/jquery.min.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("lib/toastr/toastr.min.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("lib/bootstrap/js/bootstrap.min.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("lib/angularjs/angular.min.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("lib/angularjs/angular-resource.min.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("lib/angularjs/angular-route.min.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("lib/angularjs/angular-ui-router.min.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("lib/angularjs/dirPagination.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("lib/font-awesome/css/font-awesome.min.css")'></script>
+
+<!-- <script type="text/javascript" src='@routes.Assets.at("lib/ui-router-extras/ct-ui-router-extras.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("lib/ui-router-extras/ct-ui-router-extras.sticky.js")'></script> -->
+
+
+<script type="text/javascript" src='@routes.Assets.at("javascripts/app.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("javascripts/constants.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("javascripts/controllers.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("javascripts/directives.js")'></script>
+ <script type="text/javascript" src='@routes.Assets.at("javascripts/services.js")'></script>
+ <script type="text/javascript" src='@routes.Assets.at("javascripts/htmlcontrols/htmlcontroller.js")'></script>
+
+<script type="text/javascript" src='@routes.Assets.at("javascripts/staff/staff.controller.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("javascripts/staff/stafflist.controller.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("javascripts/staff/staff.services.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("javascripts/staff/staff.apiservices.js")'></script>
+
+
+
+<script type="text/javascript" src='@routes.Assets.at("javascripts/Login/login.controller.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("javascripts/Login/authentication.service.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("javascripts/Login/flash.service.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("javascripts/Login/user.service.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("javascripts/Login/userDetail.service.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("javascripts/register/register.controller.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("javascripts/admin/organization.controller.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("javascripts/admin/admin.controller.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("javascripts/admin/admin.controller.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("javascripts/admin/admin.service.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("javascripts/admin/adminpost.service.js")'></script>
+
+
+
+
+<script type="text/javascript" src='@routes.Assets.at("javascripts/admin/adminAPI.service.js")'></script>
+
+
+<!-- New Template Dependencies -->
+<script type="text/javascript" src='@routes.Assets.at("partial-html-app/newTemplate/admin/newlogin.controller.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("partial-html-app/newTemplate/admin/newuser.service.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("partial-html-app/newTemplate/admin/newauth.service.js")'></script>
+
+<script type="text/javascript" src='@routes.Assets.at("partial-html-app/admin/student/admin.stud.controller.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("partial-html-app/admin/staff/admin.staff.controller.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("partial-html-app/admin/transportation/admin.transport.controller.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("partial-html-app/admin/Campus/admin.campus.controller.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("partial-html-app/admin/Campus/admin.news.controller.js")'></script>
+<script type="text/javascript" src='@routes.Assets.at("partial-html-app/admin/library/library.controller.js")'></script>
+
+
+
+
+
+
+</head>
+<body ng-controller="AppCtrl">
+	<!-- Static navbar -->
+	<nav class="navbar navbar-default navbar-static-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+					aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+				</button>
+				 <div class="row">
+        <div class="col-sm-12 col-sm-offset-2">
+          <div class="col-sm-1 ">
+            <img  src='@routes.Assets.at("images/yeoman.png")' width="60" height="60">
+          </div>
+          <div class="col-sm-11 text-left">
+            <h3><strong>Minds E Learning Student Information System - [MELSIS]</strong></h3>
+            <hr >
+          </div>
+        </div>
+    </div>
+			</div>
+			
+			<!--/.nav-collapse -->
+			 
+		</div>
+	</nav>
+	
+
+
+	<div class="col-md-12" ng-view>
+	
+	</div>
+	 
+	<div class="container">
+		<div class="row">&nbsp;</div>
+		<div class="alert alert-info ">
+	    	<p class="text-center">Following will allow you to make API Calls</p>
+	     </div>
+		<nav class="navbar">
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#/index">Home</a></li>
+					<!-- <li><a href="#/messages">Messages</a></li>
+					<li><a href="#/users">Users</a></li> -->
+					<li><a href="#/new_login">Log In</a></li>
+					<li><a href="#/signupstudent">Sign Up staff</a></li>
+					<li><a href="#/signupguardian">Guardian sign up </a></li>
+					<li><a href="#/admindashboard">Admin Dashboard </a></li>
+					<li><a ng-click="logout()" href>Logout</a></li>
+					
+					
+					<li><a ng-click="getuserRoles()" href>User Roles</a></li>
+					<li><a ng-click="getAllCampus()" href>All Campuses</a></li>
+					
+					
+					<li><a ng-click="getUserById()" href>Get User Id 3</a></li>
+					
+					<li><a ng-click="getUserLoginByEmail()" href>Get UserLogin user1</a></li>
+					
+					<li><a ng-click="getUserContextById()" href>Get User Context</a></li>
+					
+					<li><a ng-click="getContextById()" href>Get Context</a></li>
+					
+					<li><a ng-click="getStaffDetails()" href>Get Staff Details</a></li>
+					
+					
+					<li><a ng-click="getStudentDetails()" href>Get Student Details</a></li>
+					
+					<li><a ng-click="getGuardianDetails()" href>Get Guardian Details</a></li>
+					
+					<li><a href="#/dashboard">Dashboard</a></li>
+					<li><a href="#/Guardiandashboard">Guardian Dashboard</a></li>
+					<li><a href="#/admindashboard/1">Admin Dashboard</a></li>
+					
+					<li><a href="#/staffdashboard/1">Staff Dashboard</a></li>
+					<li><a href="#/getstaff">userlist</a></li>
+					<li><a href="#/staffdashboard">Staff Dashboard</a></li>
+					<li><a href="#/getreddash">red dashboard</a></li>
+					
+				</ul>
+				
+			</div>
+		</nav>
+	</div>
+	
+	<!-- /container -->
+	<div ui-view="organisationtab" ng-show="$state.includes('top.organisation')" class="col-sm-8"></div>
+    <div ui-view="parenttab"    ng-show="$state.includes('top.parent')"    class="col-sm-8"></div>
+    <div ui-view="stafftab"   ng-show="$state.includes('top.staff')"   class="col-sm-8"></div>
+
+	<footer>
+		<hr />
+		<div>
+			<span>&copy; MindsSolvit 2015</span>
+		</div>
+		<div>
+			<span app-version></span>
+		</div>
+	</footer>
+</body>
+</html>

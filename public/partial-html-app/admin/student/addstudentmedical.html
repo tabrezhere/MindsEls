@@ -1,0 +1,58 @@
+ <div class="panel panel-default" >
+        <!-- Default panel contents -->
+    <div class="panel-heading">Add Medical Details</div>
+        <div class="panel-body">
+      <form name="form" ng-submit="createMedical()" role="form">
+        <div class="col-md-6">
+             <div class="form-group">
+				<label for="state" class="control-label">Enter User Id :</label> 
+				<input type="number" class="form-control" id="state" ng-model="addnewMedical.userId" ng-disabled="isDisabled()">
+			</div>
+              <div class="form-group">
+                <label for="identifier" class="control-label">Enter Bloodgroup :</label> 
+				<input type="text" class="form-control" id="identifier" ng-model="addnewMedical.Bloodgroup" ng-disabled="isDisabled()">
+			</div>
+			<div class="form-group">
+				<label for="text" class="control-label">Height :</label> 
+				<input type="number" class="form-control" id="password" ng-model="addnewMedical.height" ng-disabled="isDisabled()">
+			</div>
+			<div class="form-group">
+				<label for="firstName" class="control-label">Weight :</label>
+				 <input type="number" class="form-control" id="firstName" ng-model="addnewMedical.weight" ng-disabled="isDisabled()">
+			</div>
+			</div>
+			<div class="col-md-6">
+			<div class="form-group">
+				<label for="middleName" class="control-label">Aliment :</label> 
+				<input type="text" class="form-control" id="middleName" ng-model="addnewMedical.ailment" ng-disabled="isDisabled()">
+			</div>
+			<div class="form-group">
+				<label for="lastName" class="control-label">Doctor Name :</label>
+				 <input type="text" class="form-control" id="lastName" ng-model="addnewMedical.Doctorname" ng-disabled="isDisabled()">
+			</div>
+			<div class="form-group">
+				<label for="lastName" class="control-label">Doctor Address :</label>
+				 <input type="text" class="form-control" id="lastName" ng-model="addnewMedical.Doctor_address" ng-disabled="isDisabled()">
+			</div>
+			<div class="form-group">
+				<label for="lastName" class="control-label">Doctor Mobile :</label>
+				 <input type="text" class="form-control" id="lastName" ng-model="addnewMedical.Mobile" ng-disabled="isDisabled()">
+			</div>
+			</div>
+			<div class="col-md-12">
+			 <div class="form-actions">
+          <center>  <button type="submit" ng-disabled="form.$invalid || dataLoading" class="btn btn-primary">Save Details</button>
+            <img ng-if="dataLoading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+            <a href="#/login" class="btn btn-link">Reset </a>
+            </center>
+        </div>
+					
+			</div>
+			
+	    		
+       
+    </form>
+</div>
+</div>
+</div>
+

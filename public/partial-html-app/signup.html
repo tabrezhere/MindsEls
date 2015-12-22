@@ -1,0 +1,47 @@
+<div class="row">
+	<div class="col-xs-4 col-xs-offset-4">
+		<form action="" ng-submit="signup(signupdata)">
+			<div class="form-group">
+				<label for="identifier" class="control-label">Username</label> <input type="text" class="form-control" id="identifier" ng-model="signupdata.identifier" ng-disabled="isDisabled()">
+			</div>
+			<div class="form-group">
+				<label for="password" class="control-label">Password</label> <input type="password" class="form-control" id="password" ng-model="signupdata.password" ng-disabled="isDisabled()">
+			</div>
+			<div class="form-group">
+				<label for="firstName" class="control-label">First Name</label> <input type="text" class="form-control" id="firstName" ng-model="signupdata.firstName" ng-disabled="isDisabled()">
+			</div>
+			<div class="form-group">
+				<label for="middleName" class="control-label">Last Name</label> <input type="text" class="form-control" id="middleName" ng-model="signupdata.middleName" ng-disabled="isDisabled()">
+			</div>
+			<div class="form-group">
+				<label for="lastName" class="control-label">Last Name</label> <input type="text" class="form-control" id="lastName" ng-model="signupdata.lastName" ng-disabled="isDisabled()">
+			</div>
+			
+			<div class="form-group">
+				<label for="contextId" class="control-label">User Role</label> <input type="text" class="form-control" id="contextId" ng-model="signupdata.contextId" ng-disabled="isDisabled()">
+			</div>
+			
+			<div class="form-group">
+				<label for="campusId" class="control-label">Campus</label> <input type="text" class="form-control" id="campusId" ng-model="signupdata.campusId" ng-disabled="isDisabled()">
+			</div>
+			
+			<div class="form-group">
+				<label for="address1" class="control-label">address1</label> <input type="text" class="form-control" id="address1" ng-model="signupdata.address1" ng-disabled="isDisabled()">
+			</div>
+			<div class="form-group">
+				<label for="address2" class="control-label">address2</label> <input type="text" class="form-control" id="address2" ng-model="signupdata.address2" ng-disabled="isDisabled()">
+			</div>
+			<div class="form-group">
+				<label for="city" class="control-label">city</label> <input type="text" class="form-control" id="city" ng-model="signupdata.city" ng-disabled="isDisabled()">
+			</div>
+			<div class="form-group">
+				<label for="state" class="control-label">state</label> <input type="text" class="form-control" id="state" ng-model="signupdata.state" ng-disabled="isDisabled()">
+			</div>
+						
+			
+			<div class="form-group">
+				<button type="submit" class="btn btn-action" ng-disabled="isDisabled()">Signup <i class="fa fa-arrow-right" ng-hide="isProcessing"></i><i class="fa fa-spinner fa-spin" ng-show="isProcessing"></i></button>
+			</div>
+		</form>
+	</div>
+</div>

@@ -1,0 +1,27 @@
+
+<div ng-controller="AdminStaffController">
+ 
+ 
+ <h3>Staff Profile Details</h3>
+ 
+  
+<table class="table table-bordered table-striped" >
+    		
+		      <tr>  		      	<td>Staff Id</td> <td>{{staffprofile.StaffId }}</td></tr>
+		      	<tr> <td>First Name </td>   <td>{{ staffprofile.firstName }}</td></tr>
+		         <tr><td>Last Name </td> <td>{{staffprofile.lastName}}</td></tr>
+		       <tr> <td>Middle Name</td>  <td>{{staffprofile.middleName}}</td></tr>
+		       <tr>  <td>Address Home</td> <td>{{staffprofile.address1}}</td></tr>
+		       <tr> <td>Address Office</td> <td>{{staffprofile.address2}}</td></tr>
+		      <tr>  <td>Email ID :	</td> <td>{{ staffprofile.email }}</td></tr>
+		      <tr>   <td>Phone No </td> <td>{{staffprofile.phoneNumber }}</td></tr>
+		       <tr> <td>City</td>  <td>{{staffprofile.city}}</td></tr> 	 
+		      <tr> 	<td>State</td><td>{{staffprofile.state}}</td></tr>   
+		       			      
+		    
+	   		 </table>
+
+
+   <a href="#/staffdashboard/1">Go Back </a>
+
+</div>				 

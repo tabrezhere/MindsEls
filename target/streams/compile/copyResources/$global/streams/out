@@ -1,0 +1,5 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(E:\PlayWorkspace\tabrez\test jar\Eonline_22_15_tab\Eonline_22_15_tab\conf\application.conf,E:\PlayWorkspace\tabrez\test jar\Eonline_22_15_tab\Eonline_22_15_tab\target\scala-2.10\classes\application.conf)[0m
+[0m[[0mdebug[0m] [0m	(E:\PlayWorkspace\tabrez\test jar\Eonline_22_15_tab\Eonline_22_15_tab\conf\play.plugins,E:\PlayWorkspace\tabrez\test jar\Eonline_22_15_tab\Eonline_22_15_tab\target\scala-2.10\classes\play.plugins)[0m
+[0m[[0mdebug[0m] [0m	(E:\PlayWorkspace\tabrez\test jar\Eonline_22_15_tab\Eonline_22_15_tab\conf\routes,E:\PlayWorkspace\tabrez\test jar\Eonline_22_15_tab\Eonline_22_15_tab\target\scala-2.10\classes\routes)[0m
+[0m[[0mdebug[0m] [0m	(E:\PlayWorkspace\tabrez\test jar\Eonline_22_15_tab\Eonline_22_15_tab\conf\silhouette.conf,E:\PlayWorkspace\tabrez\test jar\Eonline_22_15_tab\Eonline_22_15_tab\target\scala-2.10\classes\silhouette.conf)[0m

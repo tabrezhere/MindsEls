@@ -1,0 +1,105 @@
+
+
+<div class="container">
+	<form>
+		<div class="form-group">
+			<div class="input-group">
+				<div class="input-group-addon">
+					<i class="glyphicon glyphicon-search"></i>
+				</div>
+
+				<input type="text" class="form-control"
+					placeholder="Search by Organization" ng-model="searchOrg">
+			</div>
+		</div>
+	</form>
+
+	<table class="table table-bordered table-striped" ng-show="orgtable">
+
+		<thead>
+			<tr>
+				<td><a href=""
+					ng-click="sortType = 'name'; sortReverse = !sortReverse">
+						Organization Name <span
+						ng-show="sortType == 'name' && !sortReverse"
+						class="glyphicon glyphicon-chevron-down"></span> <span
+						ng-show="sortType == 'name' && sortReverse"
+						class="glyphicon glyphicon-chevron-up"></span>
+				</a></td>
+				<td><a href=""
+					ng-click="sortType = 'orgType'; sortReverse = !sortReverse">
+						Organization Type <span
+						ng-show="sortType == 'orgType' && !sortReverse"
+						class="glyphicon glyphicon-chevron-down"></span> <span
+						ng-show="sortType == 'orgType' && sortReverse"
+						class="glyphicon glyphicon-chevron-up"></span>
+				</a></td>
+				<td><a href=""
+					ng-click="sortType = 'id'; sortReverse = !sortReverse">
+						Organization Id <span ng-show="sortType == 'id' && !sortReverse"
+						class="glyphicon glyphicon-chevron-down"></span> <span
+						ng-show="sortType == 'id' && sortReverse"
+						class="glyphicon glyphicon-chevron-up"></span>
+				</a></td>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr
+				ng-repeat="roll in org >
+				<td><a href="#/new_showCampusList/{{ roll.id }}">{{
+						roll.name }}</a></td>
+				<td><a href="#/new_showCampusList/{{ roll.id }}">{{
+						roll.Type }}</td>
+				<td><a href="#/new_showCampusList/{{ roll.id }}">{{ roll.id
+						}}</td>
+			</tr>
+		</tbody>
+
+	</table>
+
+
+	<form ng-show="addOrgForm">
+		<div class="form-group">
+			<div class="input-group">
+				<div class="input-group-addon">
+					<i class="fa fa-search"></i>
+				</div>
+				<input type="text" class="form-control"
+					placeholder="add new Organization" ng-model="comp.orgName">
+				<input type="text" class="form-control"
+					placeholder="Organization type" ng-model="comp.orgType"> <input
+					type="text" class="form-control" placeholder="Organization Id"
+					ng-model="comp.orgId">
+
+			</div>
+
+		</div>
+		<div class="form-group">
+			<div class="col-xs-offset-3 col-xs-9">
+				<button ng-click="addorg()">Add to list</button>
+			</div>
+		</div>
+
+	</form>
+
+
+
+
+
+
+	<p class="text-center">
+		<a href="#/new_admindashboard">Back to Home</a>
+	</p>
+
+</div>
+
+
+
+<p class="text-center">
+	<a href="#/new_admindashboard">Back to Home</a> <a
+		ng-click="showAddOrgForm()">Add Organization</a>
+</p>
+
+</div>
+

@@ -1,0 +1,73 @@
+<div class="panel panel-default">
+       					 <!-- Default panel contents -->
+   						 <div class="panel-heading"><center><h2>Campus ID :{{campusid}} Books List</h2></center></div>
+   						 <div class="panel-body">
+   						 
+<div class="col-md-12 ">
+		<form>
+			<div class="form-group">
+				<div class="input-group">
+					<div class="input-group-addon">
+						<i class="glyphicon glyphicon-search"></i>
+					</div>
+					<input type="text" class="form-control" placeholder="Search for book" ng-model="searchbook">
+				</div>
+			</div>
+		</form>
+		
+	</div>
+<div class="row">
+		<table class="table table-bordered table-striped">
+			<thead>
+				<tr>
+					<td>Book ID</td>
+					<td>Author First Name</td>
+					<td>Author Last Name</td>
+					<td>Book ISBN No</td>
+					<td>Book Title</td>
+					<td>Date of Publication</td>
+					<td>No of Books Available </td>
+					<td>Book Category</td>
+					
+					
+					</tr>
+			</thead>
+			<tbody>
+							<tr ng-repeat="std in bookList | filter:searchbook ">
+					<td>{{std.id }}</td>
+					<td>{{ std.First_Name }}</td>
+					<td>{{ std.Last_Name }}</td>
+					<td>{{ std.ISBN }}</td>
+					<td>{{ std.Book_title }}</td>
+					<td>{{ std.date_of_publication }}</td>
+					<td>{{ std.bookCount }}</td>
+					<td>{{ std.Book_Categories_id }}</td>
+					
+					<td>
+					        <div class="btn-group">
+					        <button type="button" class="btn btn-default">Action</button>
+					        <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
+					        <ul class="dropdown-menu">
+					             <li><a href="#">Add Book</a></li>
+					            <li><a href="#">Issues Book</a></li>
+					            <li><a href="#">Return Book</a></li>
+					            <li class="divider">Update Book</li>
+					           
+					        </ul>
+					    </div>
+					   
+					   </td>
+					
+				</tr>
+			</tbody>
+			<tfoot>
+            <tr>
+            <td colspan='4'><b>Total Books Available :</b></td><td>{{bookList.length}}</td>
+           
+              </tr>
+      </tfoot>
+		</table>
+	</div>
+	</div>
+	</div>
+

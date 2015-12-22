@@ -1,0 +1,70 @@
+[0m[[0mdebug[0m] [0mForking tests - parallelism = false[0m
+[0m[[0mdebug[0m] [0mCreate a single-thread test executor[0m
+[0m[[0mdebug[0m] [0mRunner for com.novocode.junit.JUnitFramework produced 1 initial tasks for 1 tests.[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(MiscServiceSpec, sbt.ForkMain$AnnotatedFingerscan@42fcb4f, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunner for org.specs2.runner.Specs2Framework produced 1 initial tasks for 1 tests.[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(MiscServiceSpec, sbt.ForkMain$SubclassFingerscan@52e530d5, false, [SuiteSelector])[0m
+[0m[[0minfo[0m] [0mMiscServiceSpec[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37m[31m![0m respond to the get userRolesList Action[0m[0m
+[0m[[31merror[0m] [0m ConfigurationException: : Guice configuration errors:[0m
+[0m[[31merror[0m] [0m[0m
+[0m[[31merror[0m] [0m1) No implementation for models.services.MiscService was bound.[0m
+[0m[[31merror[0m] [0m  while locating models.services.MiscService[0m
+[0m[[31merror[0m] [0m    for parameter 1 at controllers.MiscController.<init>(MiscController.scala:17)[0m
+[0m[[31merror[0m] [0m  while locating controllers.MiscController[0m
+[0m[[31merror[0m] [0m[0m
+[0m[[31merror[0m] [0m1 error  (InjectorImpl.java:1026)[0m
+[0m[[31merror[0m] [0mcom.google.inject.internal.InjectorImpl.getProvider(InjectorImpl.java:1026)[0m
+[0m[[31merror[0m] [0mcom.google.inject.internal.InjectorImpl.getProvider(InjectorImpl.java:985)[0m
+[0m[[31merror[0m] [0mcom.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1035)[0m
+[0m[[31merror[0m] [0mGlobal$.getControllerInstance(Global.scala:42)[0m
+[0m[[31merror[0m] [0mRoutes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$14.apply(routes_routing.scala:94)[0m
+[0m[[31merror[0m] [0mRoutes$$anonfun$routes$1$$anonfun$applyOrElse$2$$anonfun$apply$14.apply(routes_routing.scala:94)[0m
+[0m[[31merror[0m] [0mplay.core.Router$HandlerInvokerFactory$$anon$13$$anon$14.call(Router.scala:217)[0m
+[0m[[31merror[0m] [0mplay.core.Router$Routes$TaggingInvoker.call(Router.scala:464)[0m
+[0m[[31merror[0m] [0mRoutes$$anonfun$routes$1$$anonfun$applyOrElse$2.apply(routes_routing.scala:94)[0m
+[0m[[31merror[0m] [0mRoutes$$anonfun$routes$1$$anonfun$applyOrElse$2.apply(routes_routing.scala:94)[0m
+[0m[[31merror[0m] [0mplay.core.Router$Routes$class.call(Router.scala:326)[0m
+[0m[[31merror[0m] [0mRoutes$.call(routes_routing.scala:16)[0m
+[0m[[31merror[0m] [0mRoutes$$anonfun$routes$1.applyOrElse(routes_routing.scala:93)[0m
+[0m[[31merror[0m] [0mRoutes$$anonfun$routes$1.applyOrElse(routes_routing.scala:81)[0m
+[0m[[31merror[0m] [0mplay.api.test.FakeApplication$$anon$3$$anon$2$$anonfun$applyOrElse$2.apply(Fakes.scala:243)[0m
+[0m[[31merror[0m] [0mplay.api.test.FakeApplication$$anon$3$$anon$2$$anonfun$applyOrElse$2.apply(Fakes.scala:243)[0m
+[0m[[31merror[0m] [0mplay.api.test.FakeApplication$$anon$3$$anon$2.applyOrElse(Fakes.scala:243)[0m
+[0m[[31merror[0m] [0mplay.api.test.FakeApplication$$anon$3$$anon$2.applyOrElse(Fakes.scala:241)[0m
+[0m[[31merror[0m] [0mplay.core.Router$Routes$class.handlerFor(Router.scala:454)[0m
+[0m[[31merror[0m] [0mplay.api.test.FakeApplication$$anon$3.handlerFor(Fakes.scala:234)[0m
+[0m[[31merror[0m] [0mplay.api.GlobalSettings$$anonfun$onRouteRequest$1$$anonfun$apply$1.apply(GlobalSettings.scala:128)[0m
+[0m[[31merror[0m] [0mplay.api.GlobalSettings$$anonfun$onRouteRequest$1$$anonfun$apply$1.apply(GlobalSettings.scala:127)[0m
+[0m[[31merror[0m] [0mplay.api.GlobalSettings$$anonfun$onRouteRequest$1.apply(GlobalSettings.scala:126)[0m
+[0m[[31merror[0m] [0mplay.api.GlobalSettings$$anonfun$onRouteRequest$1.apply(GlobalSettings.scala:126)[0m
+[0m[[31merror[0m] [0mplay.api.GlobalSettings$class.onRouteRequest(GlobalSettings.scala:126)[0m
+[0m[[31merror[0m] [0mGlobal$.onRouteRequest(Global.scala:22)[0m
+[0m[[31merror[0m] [0mplay.api.test.RouteInvokers$class.route(Helpers.scala:272)[0m
+[0m[[31merror[0m] [0mMiscServiceSpec.route(MiscServiceSpec.scala:10)[0m
+[0m[[31merror[0m] [0mplay.api.test.RouteInvokers$class.route(Helpers.scala:298)[0m
+[0m[[31merror[0m] [0mMiscServiceSpec.route(MiscServiceSpec.scala:10)[0m
+[0m[[31merror[0m] [0mplay.api.test.RouteInvokers$class.route(Helpers.scala:305)[0m
+[0m[[31merror[0m] [0mMiscServiceSpec.route(MiscServiceSpec.scala:10)[0m
+[0m[[31merror[0m] [0mMiscServiceSpec$$anonfun$2$$anon$1$delayedInit$body.apply(MiscServiceSpec.scala:13)[0m
+[0m[[31merror[0m] [0mplay.api.test.WithApplication$$anonfun$around$1.apply(Specs.scala:23)[0m
+[0m[[31merror[0m] [0mplay.api.test.WithApplication$$anonfun$around$1.apply(Specs.scala:23)[0m
+[0m[[31merror[0m] [0mplay.api.test.PlayRunners$class.running(Helpers.scala:49)[0m
+[0m[[31merror[0m] [0mplay.api.test.Helpers$.running(Helpers.scala:403)[0m
+[0m[[31merror[0m] [0mplay.api.test.WithApplication.around(Specs.scala:23)[0m
+[0m[[31merror[0m] [0mplay.api.test.WithApplication.delayedInit(Specs.scala:20)[0m
+[0m[[31merror[0m] [0mMiscServiceSpec$$anonfun$2$$anon$1.<init>(MiscServiceSpec.scala:12)[0m
+[0m[[31merror[0m] [0mMiscServiceSpec$$anonfun$2.apply(MiscServiceSpec.scala:12)[0m
+[0m[[31merror[0m] [0mMiscServiceSpec$$anonfun$2.apply(MiscServiceSpec.scala:12)[0m
+[0m[[0minfo[0m] [0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0mTotal for specification MiscServiceSpec[0m
+[0m[[0minfo[0m] [0m[36mFinished in 2 seconds, 95 ms[0m[0m
+[0m[[0minfo[0m] [0m[36m[0m[36m1 example, 0 failure, 1 error[0m[0m
+[0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 1 events.[0m
+[0m[[0mdebug[0m] [0mSummary for JUnit not available.[0m
+[0m[[0mdebug[0m] [0mSummary for specs2 not available.[0m
+[0m[[31merror[0m] [0mError: Total 1, Failed 0, Errors 1, Passed 0[0m
+[0m[[31merror[0m] [0mError during tests:[0m
+[0m[[31merror[0m] [0m	MiscServiceSpec[0m
+[0m[[31merror[0m] [0m(test:[31mtestOnly[0m) sbt.TestsFailedException: Tests unsuccessful[0m

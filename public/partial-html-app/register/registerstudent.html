@@ -1,0 +1,78 @@
+ <div class="panel panel-default" >
+        <!-- Default panel contents -->
+    <div class="panel-heading">Add New Student Details</div>
+        <div class="panel-body">
+  
+    <form name="form" ng-submit="register()" role="form">
+        <div class="col-md-6">
+             <div class="form-group">
+				<label for="state" class="control-label">StdAdminno :</label> 
+				<input type="text" class="form-control" id="state" ng-model="user.Studentadminno" ng-disabled="isDisabled()">
+			</div>
+              <div class="form-group">
+                <label for="identifier" class="control-label">Username</label> 
+				<input type="text" class="form-control" id="identifier" ng-model="user.identifier" ng-disabled="isDisabled()">
+			</div>
+			<div class="form-group">
+				<label for="password" class="control-label">Password</label> 
+				<input type="password" class="form-control" id="password" ng-model="user.password" ng-disabled="isDisabled()">
+			</div>
+			<div class="form-group">
+				<label for="firstName" class="control-label">First Name</label>
+				 <input type="text" class="form-control" id="firstName" ng-model="user.firstName" ng-disabled="isDisabled()">
+			</div>
+			<div class="form-group">
+				<label for="middleName" class="control-label">Middle Name</label> 
+				<input type="text" class="form-control" id="middleName" ng-model="user.middleName" ng-disabled="isDisabled()">
+			</div>
+			<div class="form-group">
+				<label for="lastName" class="control-label">Last Name</label>
+				 <input type="text" class="form-control" id="lastName" ng-model="user.lastName" ng-disabled="isDisabled()">
+			</div>
+			
+		
+			
+			</div>
+			
+	    <div class="col-md-6">
+	    <div class="form-group">
+				<label for="address1" class="control-label">address1</label> 
+				<input type="text" class="form-control" id="address1" ng-model="user.address1" ng-disabled="isDisabled()">
+			</div>
+			<div class="form-group">
+				<label for="address2" class="control-label">address2</label> 
+				<input type="text" class="form-control" id="address2" placeholder="should be a address" ng-model="user.address2" ng-disabled="isDisabled()">
+			</div>
+			<div class="form-group">
+				<label for="city" class="control-label">city</label> 
+				<input type="text" class="form-control" id="city" ng-model="user.city" ng-disabled="isDisabled()">
+			</div>
+		
+			<div class="form-group">
+				<label for="state" class="control-label">state</label> 
+				<input type="text" class="form-control" id="state" ng-model="user.state" ng-disabled="isDisabled()">
+			</div>
+			
+			<div class="form-group">
+				<label for="state" class="control-label">DOB</label> 
+				<input type="text" class="form-control" id="state" ng-model="user.DOB" ng-disabled="isDisabled()">
+			</div>
+			
+			<div class="form-group">
+				<label for="state" class="control-label">Class Id :</label> 
+				<input type="text" class="form-control" id="state" ng-model="user.classId" ng-disabled="isDisabled()">
+			</div>
+		
+			</div>
+			
+        <div class="form-actions">
+          <center>  <button type="submit" ng-disabled="form.$invalid || dataLoading" class="btn btn-primary">Register</button>
+            <img ng-if="dataLoading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+            <a href="#/login" class="btn btn-link">Cancel</a>
+            </center>
+        </div>
+    </form>
+</div>
+</div>
+</div>
+

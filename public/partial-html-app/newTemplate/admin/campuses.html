@@ -1,0 +1,106 @@
+
+<div ng-controller="OrgController">
+<div class="container" >
+  
+  <div class="alert alert-info">
+    <p class="text-center">
+    	Displaying campus list for organization <br>
+    	<h3 class="text-center">{{org.name}} </h3>
+    </p>
+  </div>
+  
+  <form>
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-addon"><i class="glyphicon glyphicon-search"></i></div>
+        <input type="text" class="form-control" placeholder="Search in Campus" ng-model="searchCampus">
+      </div>      
+    </div>
+  </form>
+  
+  <table class="table table-bordered table-striped" ng-show="cmptable">
+    
+    <thead>
+      <tr>
+        <td>
+          <a href="" ng-click="sortType = 'campus_name'; sortReverse = !sortReverse">
+            Campus Name
+            <span ng-show="sortType == 'campus_name' && !sortReverse" class="glyphicon glyphicon-chevron-down"></span>
+            <span ng-show="sortType == 'campus_name' && sortReverse" class="glyphicon glyphicon-chevron-up"></span>
+          </a>
+        </td>
+        <td>
+          <a href="" ng-click="sortType = 'id'; sortReverse = !sortReverse">
+         Campus ID
+            <span ng-show="sortType == 'id' && !sortReverse" class="glyphicon glyphicon-chevron-down"></span>
+            <span ng-show="sortType == 'id' && sortReverse" class="glyphicon glyphicon-chevron-up"></span>
+          </a>
+        </td>
+        <td>
+          <a href="" ng-click="sortType = 'campusAddress'; sortReverse = !sortReverse">
+          Campus Address
+            <span ng-show="sortType == 'campusAddress' && !sortReverse" class="glyphicon glyphicon-chevron-down"></span>
+            <span ng-show="sortType == 'campusAddress' && sortReverse" class="glyphicon glyphicon-chevron-up"></span>
+          </a>
+        </td>
+         <td>
+          <a href="" ng-click="sortType = 'campusLocation'; sortReverse = !sortReverse">
+          Campus Location
+            <span ng-show="sortType == 'campusLocation' && !sortReverse" class="glyphicon glyphicon-chevron-down"></span>
+            <span ng-show="sortType == 'campusLocation' && sortReverse" class="glyphicon glyphicon-chevron-up"></span>
+          </a>
+        </td>
+        <td>
+          <a href="" ng-click="sortType = 'organization_id'; sortReverse = !sortReverse">
+          Organization Id
+            <span ng-show="sortType == 'organization_id' && !sortReverse" class="glyphicon glyphicon-chevron-down"></span>
+            <span ng-show="sortType == 'organization_id' && sortReverse" class="glyphicon glyphicon-chevron-up"></span>
+          </a>
+        </td>
+        
+      </tr>
+    </thead>
+    
+    <tbody>
+      <tr ng-repeat="roll in campuslist | orderBy:sortType:sortReverse | filter:searchCampus">
+        <td><a href="#/admindashboard/{{roll.id}}/{{campus_name}}">{{roll.campus_name}}</a></td>
+        <td>{{ roll.id }}</td>
+        <td>{{ roll.campusAddress }}</td>
+         <td>{{ roll.campusLocation }}</td>
+          <td>{{ roll.organization_id }}</td>
+          </tr>
+    </tbody>
+    
+  </table>
+  
+   <form ng-show="addCmpForm">
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-addon"><i class="fa fa-search"></i></div>
+	        <input type="text" class="form-control" placeholder="add new Campus" ng-model="camp.orgName">
+	        <input type="text" class="form-control" placeholder="Campus type" ng-model="camp.orgType">
+	        <input type="text" class="form-control" placeholder="Organization Id" ng-model="camp.orgId">
+	         <input type="text" class="form-control" placeholder="CampusId" ng-model="camp.orgId">
+	     </div> 
+            
+    </div>
+    <div class="form-group">
+					<div class="col-xs-offset-3 col-xs-9">
+						 <button ng-click="addorg()">Add to list</button>
+					</div>
+	</div>
+     </form>
+  
+  <p class="text-center">
+    <div class="btn-group">
+    <center>
+    <table><tr><td> <a class="btn" href="#/new_orgList"><i class="icon-backward"></i>Back to Organizations</a></td>
+    <td><a class="btn" href="#/new_Campus"><i class="icon-plus"></i>Add New Campus</a></td></tr></table>
+   </center>
+  </div>
+ 
+  </p>
+  
+</div>
+</div>
+
