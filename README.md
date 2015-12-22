@@ -1,2 +1,2 @@
 # MindsEls
-Minds-E-Learning System
+Minds-E-Learning System web Application
