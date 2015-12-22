@@ -1,0 +1,35 @@
+{
+  "name": "the app",
+  "description": "",
+  "version": "0.0.1",
+  "homepage": "",
+  "license": "private",
+  "private": true,
+  "dependencies": {
+    "angular": "1.3.x",
+    "angular-mocks": "1.3.x",
+    "angular-route": "1.3.x",
+    "angular-resource": "1.3.x",
+    "toastr": "2.1.x",
+    "jquery": "2.1.x",
+    "bootstrap": "3.3.x",
+    "angular-animate": "1.3.x",
+    "angular-aria": "1.3.x",
+    "angular-cookies": "1.3.x",
+    "angular-messages": "1.3.x",
+    "angular-sanitize": "1.3.x",
+    "angular-touch": "1.3.x",
+    "angular-ui-router": "x.x.x",
+     "rdash-ui": "1.0.*",
+        "angular": "~1.2.21",
+        "angular-cookies": "~1.2.21",
+        "angular-bootstrap": "~0.11.0",
+        "angular-ui-router": "^0.2.10",
+        "bootstrap": "~3.2.0",
+        "font-awesome": "~4.1.0"
+    
+  },
+  "devDependencies": {
+    "ui-router-extras": "~0.0.13"
+  }
+}

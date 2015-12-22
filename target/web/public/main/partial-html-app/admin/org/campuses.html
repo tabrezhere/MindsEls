@@ -1,0 +1,5 @@
+<h5>Campuses List</h5>
+<div scope-age ></div>
+<div ng-repeat="campus in campuses">
+    <a ui-sref="^.campus({ campusid: campus.id })">{{campus.name}}</a>
+</div>

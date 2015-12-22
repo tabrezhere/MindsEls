@@ -1,0 +1,94 @@
+ <div class="panel panel-default">
+        <!-- Default panel contents -->
+    <div class="panel-heading">Add Staff Information</div>
+        <div class="panel-body">
+            <div class="">
+            	 <h1>Add Staff 
+                    <br>
+                   
+                 </h1>
+                <form class="form-horizontal" ng-submit="signup(signupdata)">
+                  
+				
+		
+			<div class="form-group">
+			<table class="table table-condensed ">
+			<tr>
+			<td><label for="identifier" class="control-label">Username		:</label></td><td> <input type="text" class="form-control" id="identifier" ng-model="signupdata.identifier" ng-disabled="isDisabled()"></td>
+			</tr>
+			<tr>
+			<td><label for="password" class="control-label">Password		:</label></td><td> <input type="password" class="form-control" id="password" ng-model="signupdata.password" ng-disabled="isDisabled()"></td>
+			</tr>
+			<tr>
+			<td><label for="firstName" class="control-label">First Name		:</label></td><td> <input type="text" class="form-control" id="firstName" ng-model="signupdata.firstName" ng-disabled="isDisabled()"></td>
+			</tr>
+			<tr>
+			<td><label for="middleName" class="control-label">Middle Name	:</label></td><td><input type="text" class="form-control" id="middleName" ng-model="signupdata.middleName" ng-disabled="isDisabled()"></td>
+			</tr>
+			<tr>
+			<td><label for="lastName" class="control-label">Last Name		:</label></td><td><input type="text" class="form-control" id="lastName" ng-model="signupdata.lastName" ng-disabled="isDisabled()"></td>
+			</tr>
+			<tr>
+			<td><label for="contextId" class="control-label">Context ID		:</label> </td><td><input type="text" class="form-control" id="contextId" ng-model="signupdata.contextId" ng-disabled="isDisabled()"></td>
+			</tr>
+			<tr>
+			<td><label for="campusId" class="control-label">Campus		:</label></td><td> <input type="text" class="form-control" id="campusId" ng-model="signupdata.campusId" ng-disabled="isDisabled()"></td>
+			</tr>
+			<tr>
+			<td><label for="address1" class="control-label">Address Residence		:</label> </td><td><input type="text" class="form-control" id="address1" ng-model="signupdata.address1" ng-disabled="isDisabled()"></td>
+			</tr>
+			<tr>
+			<td><label for="address2" class="control-label">Address Office		:</label></td><td><input type="text" class="form-control" id="address2" ng-model="signupdata.address2" ng-disabled="isDisabled()"></td>
+			</tr>
+			<tr>
+			<td><label for="city" class="control-label">City		:</label></td><td><input type="text" class="form-control" id="city" ng-model="signupdata.city" ng-disabled="isDisabled()"></td>
+			</tr>
+			<tr>
+			<td><label for="state" class="control-label">State		:</label></td><td> <input type="text" class="form-control" id="state" ng-model="signupdata.state" ng-disabled="isDisabled()"></td>
+			</tr>
+			<tr>
+			<td></td><td></td>
+			</tr>
+			</table>
+				<div class="row text-center">
+      <div class="col-xs-4 col-xs-offset-4">
+				
+			<button type="submit" class="btn btn-lg btn-primary " ng-disabled="isDisabled()">Add Staff <i class="fa fa-arrow-right" ng-hide="isProcessing"></i><i class="fa fa-spinner fa-spin" ng-show="isProcessing"></i></button>
+				
+			<button type="submit" class="btn btn-lg btn-primary " ng-disabled="isDisabled()">Cancle <i class="fa fa-arrow-right" ng-hide="isProcessing"></i><i class="fa fa-spinner fa-spin" ng-show="isProcessing"></i></button>
+				 
+		</div>
+		</div>
+				 
+			
+				
+			
+				
+		
+				
+		
+				 
+			
+				 
+			
+			
+				
+			
+						
+			
+			
+				
+		
+				</div>
+                </form>
+            </div>
+</div>
+</div>
+</div>
+
+
+
+
+<form action="" ng-submit="signup(signupdata)">
+			
+		</form>

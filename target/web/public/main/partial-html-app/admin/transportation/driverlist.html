@@ -1,0 +1,185 @@
+<div class="panel panel-default">
+       					 <!-- Default panel contents -->
+   						 <div class="panel-heading"><center><h2>Campus ID :{{campusid}} Drivers List</h2></center></div>
+   						 <div class="panel-body">
+   						 
+   						 
+
+<div>
+<div class="row"></div>
+	<div class="col-md-12 ">
+		<form>
+			<div class="form-group">
+				<div class="input-group">
+					<div class="input-group-addon">
+						<i class="glyphicon glyphicon-search"></i>
+					</div>
+					<input type="text" class="form-control" placeholder="Search in Vehicle" ng-model="searchvehicle">
+				</div>
+			</div>
+		</form>
+		
+	</div>
+	
+
+	<div class="row">
+		<table class="table table-bordered table-striped">
+			<thead>
+				<tr>
+					<td>Vehicle ID</td>
+					<td>Vehicle NO</td>
+					<td>Vehicle Code</td>
+					<td>Seats</td>
+					<td>Maximum_capacity</td>
+					<td>Insurance </td>
+					<td>tax_remitted </td>
+					<td>Permit</td>
+					<td>Status</td>
+					<td>Vehicle_type</td>
+					
+					<td>Total Stops</td>
+					</tr>
+			</thead>
+			<tbody>
+		
+				<tr dir-paginate="std in TransportList |itemsPerPage:10|  filter:searchvehicle ">
+					<td><a href="" ng-click="TransportListbyId(std.id)">
+					{{std.id }}</a></td>
+					<td>{{ std.Vehicle_no }}</td>
+					<td>{{ std.Vehicle_code }}</td>
+					<td>{{ std.No_of_Seat }}</td>
+					<td>{{ std.Maximum_capacity }}</td>
+					<td>{{ std.insurance }}</td>
+					<td>{{ std.tax_remitted }}</td>
+					<td>{{ std.permit }}</td>
+					<td>{{ std.status }}</td>
+					<td>{{ std.Vehicle_type_id }}</td>
+					
+					<td>{{ std.No_of_Stops}}</td>
+					
+				</tr>
+			</tbody>
+			<tfoot>
+            <tr>
+            <td colspan='4'><b>Total Vehicles Available :</b></td><td>{{TransportList.length}}</td>
+           
+              </tr>
+      </tfoot>
+		</table>
+	</div>
+  <dir-pagination-controls max-size="10" direction-links="true" boundary-links="true">
+            </dir-pagination-controls>
+</div>
+
+
+<div id="myVehicleModal" class="modal fade " tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header bg-info">
+				<button type="button" class="close" data-dismiss="modal"
+					aria-hidden="true"></button>
+				<h1 id="myModalLabel" class="text-center">Vehicle Details</h1>
+			</div>
+			<div class="modal-body">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-4 col-xs-offset-0">
+							<div class="well well-md text-center">
+								<h1>
+									<span class="glyphicon glyphicon-bed"></span>
+								</h1>
+								<h3>
+									{{currVehicle.Vehicle_code}}
+								</h3>
+							</div>
+						</div>
+						<div class="col-xs-8 col-xs-offset-0">
+                           
+                           <table class="table table-bordered table-striped">
+			<thead>
+				<tr>
+					<td>Vehicle ID</td>
+					<td>Vehicle NO</td>
+					<td>Vehicle Code</td>
+					<td>Seats</td>
+					<td>Maximum_capacity</td>
+					<td>Insurance </td>
+					<td>tax_remitted </td>
+					<td>Permit</td>
+					<td>Status</td>
+					<td>Vehicle_type</td>
+					<td>Route_Name</td>
+					<td>Total Stops</td>
+					</tr>
+			</thead>
+			<tbody>
+		
+				<tr ng-repeat="std in currVehicle | filter:searchvehicle ">
+					<td><a href="" ng-click="showUserModal(std.id)">
+					{{std.id }}</a></td>
+					<td>{{ std.Vehicle_no }}</td>
+					<td>{{ std.Vehicle_code }}</td>
+					<td>{{ std.No_of_Seat }}</td>
+					<td>{{ std.Maximum_capacity }}</td>
+					<td>{{ std.insurance }}</td>
+					<td>{{ std.tax_remitted }}</td>
+					<td>{{ std.permit }}</td>
+					<td>{{ std.status }}</td>
+					<td>{{ std.Vehicle_type_id }}</td>
+					<td>{{ std.Route_Name}}</td>
+					<td>{{ std.No_of_Stops}}</td>
+					
+				</tr>
+			</tbody>
+						</table>
+						</div>
+							 <div class="row" ng-show="viewVehicleFlag">			
+					</div>
+					</div>
+					
+		 		<hr>
+					
+					<div  class="row" id="editVehicleFormDiv" ng-show="editVehicleFlag">
+						<form id="editVehicleForm" class="form-horizontal">
+							<div class="form-group">
+								<label for="vehicleName" class="control-label col-xs-3">
+									Vehicle Type
+								</label>
+								<div class="col-xs-9">
+									<input type="text" ng-model="Transport.TransportName" class="form-control" id="vehicleName" value='{{currVehicle.transportName}}' placeholder="Vehicle type">
+								</div>
+								
+							</div>
+							<div class="form-group">
+								<label for="vehicleId" class="control-label col-xs-3">
+									Vehicle Id
+								</label>
+								<div class="col-xs-9">
+									<input type="text" ng-model="Transport.TransportId" class="form-control" id="vehicleId" value="{{currVehicle.transportId}}" placeholder="Vehicle id">
+								</div>
+								
+							</div>
+							<div class="form-group">
+								
+								<div class="col-xs-9 col-xs-offset-3">
+									<button type="button" class="btn btn-primary" ng-click="updateVehicleInfo();">Update Vehicle Info</button>
+								</div>
+								
+							</div>
+						</form>
+					</div>
+				</div>
+				
+			</div>
+			<div class="modal-footer bg-info">
+				<button class="btn btn-lg btn-primary center-block pull-right"
+					data-dismiss="modal" aria-hidden="true">Okay</button>
+					<button class="btn btn-lg btn-default center-block pull-left" ng-click="editVehicleInfo();">Edit</button>
+			</div>
+			
+		</div>
+	</div>
+</div>
+</div>
+</div>

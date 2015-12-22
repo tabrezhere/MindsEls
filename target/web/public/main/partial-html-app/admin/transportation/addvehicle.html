@@ -1,0 +1,106 @@
+<div class="panel panel-default">
+	<!-- Default panel contents -->
+	<div class="panel-heading">Add New Vehicle Information</div>
+	<div class="panel-body">
+		 <form name="form" ng-submit="createNewVehicle()" role="form">
+		
+		 <div class="col-md-6">
+		 
+		        <div class="form-group">
+				<label for="Vehicle_no" class="control-label">Vehicle_no</label> <input type="text" class="form-control" id="Vehicle_no" ng-model="vehiclecreatedata.Vehicle_no" ng-disabled="isDisabled()">
+			    </div>
+			     <div class="form-group">
+				<label for="Vehicle_code" class="control-label">Vehicle_code</label> <input type="text" class="form-control" id="Vehicle_code" ng-model="vehiclecreatedata.Vehicle_code" ng-disabled="isDisabled()">
+			     </div>
+			    <div class="form-group">
+				<label for="No_of_Seat" class="control-label">No_of_Seat</label> <input type="number" class="form-control" id="No_of_Seat" ng-model="vehiclecreatedata.No_of_Seat" ng-disabled="isDisabled()">
+			    </div>
+			    <div class="form-group">
+			  	<label for="Maximum_capacity" class="control-label">Maximum_capacity</label> <input type="number" class="form-control" id="Maximum_capacity" ng-model="vehiclecreatedata.Maximum_capacity" ng-disabled="isDisabled()">
+			    </div>
+			    <div class="form-group">
+				<label for="insurance" class="control-label">Insurance</label> <input type="text" class="form-control" id="insurance" ng-model="vehiclecreatedata.insurance" ng-disabled="isDisabled()">
+			    </div>
+			    <div class="form-group">
+				<label for="tax_remitted" class="control-label">Tax_remitted</label> <input type="text" class="form-control" id="tax_remitted" ng-model="vehiclecreatedata.tax_remitted" ng-disabled="isDisabled()">
+			    </div>
+				<div class="form-group">
+				<label for="permit" class="control-label">Permit</label> <input type="text" class="form-control" id="permit" ng-model="vehiclecreatedata.permit" ng-disabled="isDisabled()">
+			    </div>
+			    <div class="form-group">
+				<label for="status" class="control-label">Status</label> <input type="text" class="form-control" id="status" ng-model="vehiclecreatedata.status" ng-disabled="isDisabled()">
+			    </div>
+			    <div class="form-group">
+			    <label for="Vehicle_type_id" class="control-label">Vehicle_type</label>
+			     <div class="dropdown">
+			     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+			            {{selectedvehicletype}}
+			            <span class="caret"></span>
+			        </button>
+			        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+			            <li ng-repeat="b in vehicletype "><a ng-click="dropboxvehicletypeselected(b)">{{b.name}}</a><li>
+			        </ul>
+			     	</div>			 
+			    </div>
+		 
+		 </div>
+		  <div class="col-md-6">
+		       <div class="form-group">
+				<label for="Route_Name" class="control-label">Campus ID</label> <input type="number" class="form-control" id="CampusId" ng-model="vehiclecreatedata.campusId" ng-disabled="isDisabled()">
+			    </div>
+		        <div class="form-group">
+				<label for="Route_Name" class="control-label">Route_Name</label> <input type="text" class="form-control" id="Route_Name" ng-model="vehiclecreatedata.Route_Name" ng-disabled="isDisabled()">
+			    </div>
+			
+			    <div class="form-group">
+				<label for="No_of_Stops" class="control-label">Enter No_of_Stops Names Seperated by Comma</label> <input type="number" class="form-control" id="No_of_Stops" ng-model="vehiclecreatedata.No_of_Stops" ng-disabled="isDisabled()">
+			    </div>
+			
+			    <div class="form-group">
+				<label for="Stop_Name" class="control-label">Ente Stop_Names Seperated by Comma</label> <input type="text" class="form-control" id="Stop_Name" ng-model="vehiclecreatedata.Stop_Name" ng-disabled="isDisabled()">
+			    </div>
+			
+			   <div class="form-group">
+				<label for="fare" class="control-label">Enter Fare Seperated by Comma</label> <input type="text" class="form-control" id="fare" ng-model="vehiclecreatedata.fare" ng-disabled="isDisabled()">
+			   </div>
+			
+			   <div class="form-group">
+				<label for="Arival_Mrng" class="control-label">Enter Arival_Mrng Seperated by Comma</label> <input type="text" class="form-control" id=Arival_Mrng ng-model="vehiclecreatedata.Arival_Mrng" ng-disabled="isDisabled()">
+			  </div>
+			  
+			   <div class="form-group">
+			 	<label for="Departure_Mrng" class="control-label">Enter Departure_Mrng Seperated by Comma</label> <input type="text" class="form-control" id="Departure_Mrng" ng-model="vehiclecreatedata.Departure_Mrng" ng-disabled="isDisabled()">
+			  </div>
+			
+			  <div class="form-group">
+				<label for="Arival_Evng" class="control-label">Enter Arival_Evng Seperated by Comma</label> <input type="text" class="form-control" id="Arival_Evng" ng-model="vehiclecreatedata.Arival_Evng" ng-disabled="isDisabled()">
+			  </div>
+			
+			  <div class="form-group">
+				<label for="Departure_Evng" class="control-label">Enter Departure_Evng Seperated by Comma</label> <input type="text" class="form-control" id=Departure_Evng ng-model="vehiclecreatedata.Departure_Evng" ng-disabled="isDisabled()">
+			  </div>
+		  
+		  </div>
+		  
+		       
+	
+	     <div class="col-md-12">
+		  <div class="form-group">
+		 <center>
+				<button type="submit" class="btn btn-primary" ><i class="fa fa-bus"></i>         Create Vehicle Information </button>
+		  </center>	
+		  
+			</div>
+		</div>
+		
+		
+
+
+
+
+
+
+
+
+	</div>
+</div>

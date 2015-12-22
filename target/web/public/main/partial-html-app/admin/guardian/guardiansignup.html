@@ -1,0 +1,84 @@
+<div class="row">
+	<div class="col-xs-4 col-xs-offset-4">
+		<form action="" ng-submit="guardiansignup(guardiansignupdata)">
+			<div class="form-group">
+				<label for="identifier" class="control-label">Username</label> <input type="text" class="form-control" id="identifier" ng-model="guardiansignupdata.identifier" ng-disabled="isDisabled()">
+			</div>
+			<div class="form-group">
+				<label for="password" class="control-label">Password</label> <input type="password" class="form-control" id="password" ng-model="guardiansignupdata.password" ng-disabled="isDisabled()">
+			</div>
+			<div class="form-group">
+				<label for="firstName" class="control-label">First Name</label> <input type="text" class="form-control" id="firstName" ng-model="guardiansignupdata.firstName" ng-disabled="isDisabled()">
+			</div>
+			<div class="form-group">
+				<label for="middleName" class="control-label">Last Name</label> <input type="text" class="form-control" id="middleName" ng-model="guardiansignupdata.middleName" ng-disabled="isDisabled()">
+			</div>
+			<div class="form-group">
+				<label for="lastName" class="control-label">Last Name</label> <input type="text" class="form-control" id="lastName" ng-model="guardiansignupdata.lastName" ng-disabled="isDisabled()">
+			</div>
+			
+			<!-- <div class="form-group">
+				<label for="contextId" class="control-label">User Role</label> <input type="text" class="form-control" id="contextId" ng-model="guardiansignupdata.contextId" ng-disabled="isDisabled()">
+			</div> -->
+			
+			<div class="form-group">
+				<label for="campusId" class="control-label">Campus</label> <input type="text" class="form-control" id="campusId" ng-model="guardiansignupdata.campusId" ng-disabled="isDisabled()">
+			</div>
+			
+			<div class="form-group">
+				<label for="address1" class="control-label">address1</label> <input type="text" class="form-control" id="address1" ng-model="guardiansignupdata.address1" ng-disabled="isDisabled()">
+			</div>
+			<div class="form-group">
+				<label for="address2" class="control-label">address2</label> <input type="text" class="form-control" id="address2" ng-model="guardiansignupdata.address2" ng-disabled="isDisabled()">
+			</div>
+			<div class="form-group">
+				<label for="city" class="control-label">city</label> <input type="text" class="form-control" id="city" ng-model="guardiansignupdata.city" ng-disabled="isDisabled()">
+			</div>
+			<div class="form-group">
+				<label for="state" class="control-label">state</label> <input type="text" class="form-control" id="state" ng-model="guardiansignupdata.state" ng-disabled="isDisabled()">
+			</div>
+			
+			<div class="form-group">
+				<label for="DOB" class="control-label">DOB</label> <input type="text" class="form-control" id="DOB" ng-model="guardiansignupdata.DOB" ng-disabled="isDisabled()">
+			</div>
+			
+			<div class="form-group">
+				<label for="Gender" class="control-label">Gender</label> <input type="text" class="form-control" id="Gender" ng-model="guardiansignupdata.Gender" ng-disabled="isDisabled()">
+			</div>
+			
+			<div class="form-group">
+				<label for="phoneNumber" class="control-label">Phone Number</label> <input type="number" class="form-control" id="phoneNumber" ng-model="guardiansignupdata.phoneNumber" ng-disabled="isDisabled()">
+			</div>
+			
+			
+			
+			<div class="form-group">
+				<label for="relationship" class="control-label">relationship</label> <input type="text" class="form-control" id="relationship" ng-model="guardiansignupdata.relationship" ng-disabled="isDisabled()">
+			</div>
+			
+			<div class="form-group">
+				<label for="mobile" class="control-label">mobile</label> <input type="number" class="form-control" id="mobile" ng-model="guardiansignupdata.mobile" ng-disabled="isDisabled()">
+			</div>
+			
+			<div class="form-group">
+				<label for="income" class="control-label">income</label> <input type="text" class="form-control" id="income" ng-model="guardiansignupdata.income" ng-disabled="isDisabled()">
+			</div>
+			
+			<div class="form-group">
+				<label for="education" class="control-label">education</label> <input type="text" class="form-control" id="education" ng-model="guardiansignupdata.education" ng-disabled="isDisabled()">
+			</div>
+			
+			
+			<div class="form-group">
+				<label for="stdadmissionno" class="control-label">Student Admission Numbers</label> <input type="text" class="form-control" id="stdadmissionno" ng-model="guardiansignupdata.stdadmissionno" ng-disabled="isDisabled()">
+			</div>
+			
+			
+						
+			
+			<div class="form-group">
+				<button type="submit" class="btn btn-action" ng-disabled="isDisabled()">Signup <i class="fa fa-arrow-right" ng-hide="isProcessing"></i><i class="fa fa-spinner fa-spin" ng-show="isProcessing"></i></button>
+			</div>
+		</form>
+	</div>
+</div>

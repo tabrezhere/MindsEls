@@ -1,0 +1,136 @@
+ <div class="row clearfix">
+	<div class="col-md-12 column">
+		<div class="panel-group" id="panel-724555">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					 <span class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-724555" href="#panel-element-staffDetails">Staff Details</span>
+				</div>
+				<div id="panel-element-staffDetails" class="panel-collapse collapse">
+					<div class="panel-body">
+						<div class="well well-lg">
+							<form name="form" ng-submit="register()" role="form">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="identifier" class="control-label">Username</label> 
+											<input type="text" class="form-control" id="identifier" ng-model="$parent.adminstaffobj.username" ng-disabled="isDisabled()">
+										</div>
+										<div class="form-group">
+											<label for="password" class="control-label">Password</label> 
+											<input type="password" class="form-control" id="password" ng-model="$parent.adminstaffobj.password" ng-disabled="isDisabled()">
+										</div>
+										<div class="form-group">
+											<label for="firstName" class="control-label">First Name</label>
+											 <input type="text" class="form-control" id="firstName" ng-model="$parent.adminstaffobj.firstName" ng-disabled="isDisabled()">
+										</div>
+										<div class="form-group">
+											<label for="middleName" class="control-label">Middle Name</label> 
+											<input type="text" class="form-control" id="middleName" ng-model="$parent.adminstaffobj.middleName" ng-disabled="isDisabled()">
+										</div>
+										<div class="form-group">
+											<label for="lastName" class="control-label">Last Name</label>
+											 <input type="text" class="form-control" id="lastName" ng-model="$parent.adminstaffobj.lastName" ng-disabled="isDisabled()">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="address1" class="control-label">address1</label> 
+											<input type="text" class="form-control" id="address1" ng-model="$parent.adminstaffobj.address" ng-disabled="isDisabled()">
+										</div>
+										<div class="form-group">
+											<label for="address2" class="control-label">address2</label> 
+											<input type="text" class="form-control" id="address2" placeholder="should be a address" ng-model="$parent.adminstaffobj.address1" ng-disabled="isDisabled()">
+										</div>
+										<div class="form-group">
+											<label for="city" class="control-label">city</label> 
+											<input type="text" class="form-control" id="city" ng-model="$parent.adminstaffobj.city" ng-disabled="isDisabled()">
+										</div>
+										<div class="form-group">
+											<label for="state" class="control-label">state</label> 
+											<input type="text" class="form-control" id="state" ng-model="$parent.adminstaffobj.state" ng-disabled="isDisabled()">
+										</div>
+										
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-actions pull-right">
+							            <button type="submit" ng-disabled="form.$invalid || dataLoading" class="btn btn-primary">Register</button>
+							            <img ng-if="dataLoading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+							            <!-- <a href="#/login" class="btn btn-link">Cancel</a> -->
+							            <button type="reset"  class="btn btn-warning">Clear</button>
+							            <button type="button"  class="btn btn-default collapsed" data-toggle="collapse" data-parent="#panel-724555" href="#panel-element-staffDetails">Cancel</button>
+							        </div>
+								</div>
+							</form>	
+						</div>
+					</div>
+					<div class="panel-footer">
+						<span class=" collapsed  text-center text-default" data-toggle="collapse" data-parent="#panel-724555" href="#panel-element-staffDetails">Close this section</span>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					 <span class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-724555" href="#panel-element-associateClass">Associate Class</span>
+				</div>
+				<div id="panel-element-associateClass" class="panel-collapse collapse">
+					<div class="panel-body">
+						<div class="well well-lg">
+							<h3>Associate Class</h3>
+								 <div class="form-group">
+								
+					              <label for="state" class="control-label">Select Class</label> 
+                                                  <select data-ng-model="ddlvalue">
+                                                     <option value="" class="form-control">--Select--</option>
+                                                   <option data-ng-repeat="t in classes" value="">{{t.name}}</option>
+                                               </select><br />
+                                     
+                                      
+                                        <label for="state" class="control-label">Subject</label>  <input type="text" class="form-control" ng-model="$parent.adminstaffobj.subject"><br/>
+					                 <!--  <select id="country" ng-model="subjects" ng-options="class for (class, subjects) in classDetails">
+					                    <option value=''>Select</option>
+					                </select>
+					              
+					                
+					                
+					            </div>
+					            <div>
+					                Subjects: <select id="state" ng-disabled="!subjects" ng-model="sections" ng-options="subject for (subject,section) in subjects"><option value=''>Select</option></select>
+					            </div>
+					            <div>
+					                Sections: <select id="city" ng-model="section" ng-disabled="!subjects || !sections" ><option value=''>Select</option> <option ng-repeat="section in sections" value='{{section}}'>{{section}}</option></select>
+					                -->        
+					            </div>
+				         </div>
+					</div>
+					<div class="panel-footer">
+						<span class="collapsed  text-center text-default" data-toggle="collapse" data-parent="#panel-724555" href="#panel-element-associateClass">Close this section</span>
+					</div>
+				</div>
+				
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					 <span class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-724555" href="#panel-element-staffExperienceDetails">Staff Experience Details</span>
+				</div>
+				<div id="panel-element-staffExperienceDetails" class="panel-collapse collapse">
+					<div class="panel-body">
+						<div class="well well-lg">
+							<h2>Staff Experience Details</h2>
+							<br/>
+							<label for="state" class="control-label">Experience</label> :<input type="text" class="form-control" ng-model="$parent.adminstaffobj.exp"><br/>
+							<label for="state" class="control-label">Hobbies</label>: <input type="text" class="form-control" ng-model="$parent.adminstaffobj.hobby"><br/>
+							<label for="state" class="control-label">Your Interest :</label> <input type="text" class="form-control" ng-model="$parent.adminstaffobj.interest">
+							
+						</div>
+					</div>
+					<div class="panel-footer">
+						<span class=" collapsed text-center text-default" data-toggle="collapse" data-parent="#panel-724555" href="#panel-element-staffExperienceDetails">Close this section</span>
+					</div>
+				</div>
+			</div>
+		 
+		</div>
+	</div>
+</div>

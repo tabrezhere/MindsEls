@@ -1,0 +1,43 @@
+<div class="panel panel-default">
+        <!-- Default panel contents -->
+    <div class="panel-heading">Add New Campus</div>
+        <div class="panel-body">
+            <div class="">
+            	 <h1>Add New Campus 
+                    <br>
+                   
+                 </h1>
+                <form class="form-horizontal" ng-submit="signup(signupdata)">
+                  
+				
+		
+			<div class="form-group">
+			<table class="table table-condensed ">
+			<tr>
+			<td><label for="Organization" class="control-label">Organization Name		:</label></td><td> <input type="text" class="form-control" id="" ng-model="" ng-disabled="isDisabled()"></td>
+			</tr>
+			<tr>
+			<td><label for="Status" class="control-label">Status	:</label></td><td> <input type="text" class="form-control" id="status" ng-model="" ng-disabled="isDisabled()"></td>
+			</tr>
+			<tr>
+			<td><label for="Address" class="control-label">Address		:</label></td><td> <input type="text" class="form-control" id="address" ng-model="address" ng-disabled="isDisabled()"></td>
+			</tr>
+			
+			<tr>
+			<td><label for="campusId" class="control-label">Campus ID	:</label></td><td> <input type="text" class="form-control" id="campusId" ng-model="" ng-disabled="isDisabled()"></td>
+			</tr>
+			
+
+			</table>
+			<div class="row text-center">
+          <div class="col-xs-4 col-xs-offset-4">
+				
+			<button type="submit" class="btn btn-lg btn-primary " ng-disabled="isDisabled()">Add New Organization <i class="fa fa-arrow-right" ng-hide="isProcessing"></i><i class="fa fa-spinner fa-spin" ng-show="isProcessing"></i></button>
+				
+			<button type="submit" class="btn btn-lg btn-primary " ng-disabled="isDisabled()">Cancle <i class="fa fa-arrow-right" ng-hide="isProcessing"></i><i class="fa fa-spinner fa-spin" ng-show="isProcessing"></i></button>
+				 
+		</div>
+			</div>
+			</form>
+			</div>
+			</div>

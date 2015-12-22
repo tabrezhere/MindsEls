@@ -1,0 +1,214 @@
+<div ng-controller="NewLoginController">
+<div class="container" >
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="row clearfix">
+				<div class="col-md-2 column">
+					<img alt="140x140" height="150" width="150" src="/assets/images/adminDB.png" />
+				</div>
+				<div class="col-md-10 column text-center">
+				<h1>Staff Dashboard</h1>
+				</div>
+			</div>
+			
+			<div class="row clearfix">
+				<div class="col-md-3 column">
+					<div class="panel-group" id="panel-724555">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								 <span class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-724555" href="#panel-element-857742">Manage Staff</span>
+							</div>
+							<div id="panel-element-857742" class="panel-collapse collapse">
+								<div class="panel-body">
+									<ul>
+										<li><a ui-sref="StaffProfile">Staff Profile</a></li>
+										<li><a  ui-sref="StaffClass">Class Association</a></li>
+										<li><a  ui-sref="StaffExp"> Experience</a></li>
+										<li><a ui-sref="StaffClassList"> StaffClassList</a></li>
+										
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+						
+						
+						
+						
+					</div>
+				</div>
+				
+				<div class="col-md-8 column">
+					<div ui-view="stafftab" ng-show="$state.includes('top.staff')" class="col-sm-8"></div>
+					<div ui-view="studenttab"    ng-show="$state.includes('top.student')"    class="col-sm-8"></div>
+					<div ui-view="parenttab"   ng-show="$state.includes('top.parent')"   class="col-sm-8"></div>
+				</div>
+				<div ui-view class="col-md-8 column">
+				
+				</div>
+				
+						
+				</div>
+			</div>
+		</div>
+</div>
+  
+</div>
+
+
+<!-- <div ng-controller="NewLoginController">
+
+
+<h1>Checking {{people.firstName}}</h1>
+<div class="container" >
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="row clearfix">
+				<div class="col-md-2 column">
+					<img alt="140x140" height="150" width="150" src="/assets/images/adminDB.png" />
+				</div>
+				<div class="col-md-10 column text-center">
+					<h1 class="text-info">Staff Dashboard</h1>
+				
+				
+				</div>
+			</div>
+			
+			<div class="row clearfix">
+				<div class="col-md-3 column">
+					
+								
+					
+						orgHome.html 
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								 <span class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-724555" href="#panel-element-65411">Staff Details</span>
+							</div>
+							<div id="panel-element-65411" class="panel-collapse collapse">
+								<div class="panel-body">
+									<ul>
+										<li><a ui-sref="StaffProfile">Staff Profile</a></li>
+										<li><a ui-sref="StaffClass">Class Association</a></li>
+										<li><a ui-sref="StaffExp"> Experience</a></li>
+										
+										
+									
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-8 column">
+					<div ui-view="stafftab" ng-show="$state.includes('top.staff')" class="col-sm-8"></div>
+					<div ui-view="studenttab"    ng-show="$state.includes('top.student')"    class="col-sm-8"></div>
+					<div ui-view="parenttab"   ng-show="$state.includes('top.parent')"   class="col-sm-8"></div>
+				</div>
+				<div ui-view class="col-md-8 column">
+				
+				</div>
+				
+				
+
+		
+				</div>
+			</div>
+		</div>
+</div>
+</div> -->
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div ng-controller="NewLoginController">
+
+                <ul class="nav nav-pills">
+          		<li>
+				 <a class="brand" href="/">MELSIS Staff Dash Board </a>
+				</li>
+			    <li class="active">
+			    <a href="#"><span class="glyphicon glyphicon-home"></span>Home</a>
+			    </li>
+			  	</ul>
+			<p>welcome to user {{username}} to MindsEls</p>
+			<table>
+			<b> <thead>
+		      <tr>
+		        <td>
+		         orgName
+		       	</td>
+		        <td>
+		            orgType
+		         </td>
+		         <td>
+		        orgid
+		       	</td>
+		       	
+		      
+		      </tr></b>
+		    </thead>
+	    	<tbody>
+	     		<tr ng-repeat="std in getdata | filter:searchStaff ">
+	     		  <td>{{ std.orgName }}</td>
+		     	   <td><a href="notep">{{ std.orgType }}</a></td>
+		     	  <td>{{ std.orgid }}</td>
+		     	       	   
+		     	</tr>
+	   		 </tbody>
+			</table>
+			
+			
+	  <div ng-controller="StaffController">
+	
+	
+	
+	
+	
+	
+	
+	
+	            <h1>{{title}} from Staff</h1>
+	
+	</div>		
+			
+			
+	</div>		 -->
