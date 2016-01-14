@@ -18,20 +18,17 @@ angular.module('theApp').factory(
 					return service;
 
 					function verifyLogin(credentials, callback) {
-						console.log('inside verify login');
-						console.log('Username --- ' + credentials.username);
-						console.log('Password --- ' + credentials.password);
+						console.log('0 in NewAuthService callback JS verify login');
+						console.log('0 Identifier --- ' + credentials.identifier);
+						console.log('0 Password --- ' + credentials.password);
 						NewUserService.VerifyUser(credentials).then(
 								function(response) {
-								
-									var result;
-									result = {
-											
-											type :'admin',
-											username : 'siddutab'							
-									};
-
-									callback(result);
+									console.log("0 NewAuthService testing response");
+									console.log("0 1NewAuthService message --- " + response.data.message);
+									console.log("0 NewAuthService staus --- " + response.data.staus.success);
+									console.log("0 NewAuthService staffuser.context --- " + response.data.data.staffuser.context);
+									
+									callback(response.data);
 								});
 					}
 					

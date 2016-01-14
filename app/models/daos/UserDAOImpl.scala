@@ -2045,7 +2045,7 @@ val HolidaySimple = {
           `sd`.`vehicleId`
         FROM
           `user` `u`,`user_login` `ul`,`user_context` `uc`,`staff_details` `sd`,`context` `c`,`campus` `camp`,`organization` `org`, 
-          `vehicle_details` `vdl`,`subject_master` `sm`,`staff_subject_map` `ssm`, `term` `trm`
+           `subject_master` `sm`,`staff_subject_map` `ssm`, `term` `trm`
         WHERE
           `sd`.`user_id`= {user_id}
           AND `ul`.`user_id` = `u`.`id`

@@ -169,7 +169,8 @@ class RestUserController @Inject() (
                 vehicleCount = vehcleCount,holidayCount = hlydayCount, eventCount = evntCount)
                 val  response=Ok(Json.toJson(MsgOK("You have been Logged-in up succesfully1.", Json.obj(
                 "session" -> Token(token = authenticator.id, expiresOn = authenticator.expirationDate),
-                "campusAdminUserWithCount" -> campusAdminUserWithCount))))
+                "campusAdminUserWithCount" -> campusAdminUserWithCount,
+                "context" -> 3))))
                  env.authenticatorService.init(authenticator, Future.successful(response.withCookies(Cookie("XSRF-TOKEN",authenticator.id)) ))
               
               }
@@ -180,7 +181,8 @@ class RestUserController @Inject() (
                 val studentuser = userService.getFromDBStudentUserById(user.id)
                 val  response=Ok(Json.toJson(MsgOK("You have been Logged-in up succesfully1.", Json.obj(
                 "session" -> Token(token = authenticator.id, expiresOn = authenticator.expirationDate),
-                "studentuser" -> studentuser))))
+                "studentuser" -> studentuser,
+                "context" -> 4))))
                  env.authenticatorService.init(authenticator, Future.successful(response.withCookies(Cookie("XSRF-TOKEN",authenticator.id)) ))
               
               }
@@ -191,7 +193,8 @@ class RestUserController @Inject() (
                 val staffuser = userService.getFromDBStaffUserById(user.id)
                 val  response=Ok(Json.toJson(MsgOK("You have been Logged-in up succesfully2.", Json.obj(
                 "session" -> Token(token = authenticator.id, expiresOn = authenticator.expirationDate),
-                "staffuser" -> staffuser))))
+                "staffuser" -> staffuser,
+                "context" -> 5))))
                  env.authenticatorService.init(authenticator, Future.successful(response.withCookies(Cookie("XSRF-TOKEN",authenticator.id)) ))
               
               }
@@ -226,7 +229,8 @@ class RestUserController @Inject() (
                   
                     val  response=Ok(Json.toJson(MsgOK("You have been Logged-in up succesfully2.", Json.obj(
 	                "session" -> Token(token = authenticator.id, expiresOn = authenticator.expirationDate),
-	                "guardianStudentDetails" -> guardianStudentDetails))))
+	                "guardianStudentDetails" -> guardianStudentDetails,
+                "context" -> 6))))
                  env.authenticatorService.init(authenticator, Future.successful(response.withCookies(Cookie("XSRF-TOKEN",authenticator.id)) ))
                 }
               else
@@ -237,7 +241,8 @@ class RestUserController @Inject() (
                   
                     val  response=Ok(Json.toJson(MsgOK("You have been Logged-in up succesfully2.", Json.obj(
                   "session" -> Token(token = authenticator.id, expiresOn = authenticator.expirationDate),
-                  "librarianuser" -> librarianuser))))
+                  "librarianuser" -> librarianuser,
+                "context" -> 8))))
                  env.authenticatorService.init(authenticator, Future.successful(response.withCookies(Cookie("XSRF-TOKEN",authenticator.id)) ))
                 }
                 else
@@ -248,7 +253,8 @@ class RestUserController @Inject() (
                   
                     val  response=Ok(Json.toJson(MsgOK("You have been Logged-in up succesfully2.", Json.obj(
                   "session" -> Token(token = authenticator.id, expiresOn = authenticator.expirationDate),
-                  "driveruser" -> driveruser))))
+                  "driveruser" -> driveruser,
+                "context" -> 9))))
                  env.authenticatorService.init(authenticator, Future.successful(response.withCookies(Cookie("XSRF-TOKEN",authenticator.id)) ))
                 }
               else
@@ -256,7 +262,8 @@ class RestUserController @Inject() (
                 println("general User",user)
                 val response = Ok(Json.toJson(MsgOK("You have been Logged-in up succesfully.", Json.obj(
                 "session" -> Token(token = authenticator.id, expiresOn = authenticator.expirationDate),
-                "user" ->user))))
+                "user" ->user,
+                "context" -> 0))))
                 println("ok got its User : ",user)
               env.authenticatorService.init(authenticator, Future.successful(response.withCookies(Cookie("XSRF-TOKEN",authenticator.id)) ))
               }
