@@ -8,6 +8,7 @@
             service.addStaff = addStaff;
             service.getstaff=getstaff;
             service.getstudentList=getstudentList;
+            service.getstaffDetails = getstaffDetails;
             return service;
             
             function addStaff(staffUser,callback)
@@ -16,14 +17,20 @@
             	console.log('Username --- '+staffUser.firstName);
             	StaffApiService.AddStaff(staffUser)
             		.then(function(response){
-            			//var response = response.data;
-            		//	var result;
-            			console.log('Response is obtained ---- ');
-            			
+            		console.log('Response is obtained ---- ');
             			callback(response);
             		});
             }
             
+            function getstaffDetails(staffId){
+                console.log('Inside Staff Services staffId  '+staffId);
+                StaffApiService.getStaffDetails(staffId).then(function(response){
+                      console.log('Staff Details Response is obtained form Api in service ---- ');  
+                      console.log('response --- '+response.data);
+                    //  callback(response);
+                });
+            }
+
             function getstaff(callback)
             {
             	//console.log('inside verify login');

@@ -44,36 +44,7 @@ angular.module('theApp').controller(
 						} ]
 
 					} ];
-					/* function classlist($scope.ID)
-					 {
-					  var students = [{
-					        "id": 1,
-					        "name": "saleem",
-					        "address": ."GUL",
-					        "classname":'Second',
-					        "classId":12
-					       
-					    }, {
-					    	"id": 2,
-					        "name": "sameer",
-					        "address": ."GUL",
-					        "classname":'Second',
-					        "classId":12
-					    }, {
-					    	"id": 3,
-					        "name": "guru",
-					        "address": ."GUL",
-					        "classname":'third',
-					        "classId":13
-					    }, {
-					    	"id": 4,
-					        "name": "suresh",
-					        "address": ."GUL",
-					        "classname":'fourth',
-					        "classId":14
-					    }];
-					   return students;
-					 }*/
+					
 
 					$scope.password = "hi";
 					$scope.dataLoading = false;
@@ -92,29 +63,22 @@ angular.module('theApp').controller(
 
 						NewAuthService.verifyLogin(credentials, function(
 								response) {
-							console.log('usertype = ' + response.type);
-							console.log('username = ' + response.identifier);
-							console.log($scope.adminstaff);
-							$scope.adminstaff = NewAuthService.getadminstaff();
-							staffdt = NewAuthService.getadminstaff();
-							console.log('Organization name')
-							console.log($scope.adminstaff);
-							console.log(staffdt);
-							console.log(response.data);
-
-							if (response.type === 'admin') {
-								console.log('now going to admin page');
-								location.href = "#/new_admindashboard"
-							} else if (response.type === 'staff') {
+							console.log('user context id =:>==> ' + response.data.context);
+							//console.log('username = ' + response.data.staffuser.email);
+						
+							if (response.data.context === 3) {
+								//console.log('now going to staff page'); http://localhost:9000/#/admindashboard/1
+								location.href = "#/admindashboard/"+response.data.campusAdminUserWithCount.campusAdminUser.campusId;
+							} else if (response.data.context  === 5) {
 								console.log('now going to staff page');
-								location.href = "#/staffdashboard"
-							} else {
-								location.href = "#/Guardiandashboard"
+								location.href = "#/staffUserDashboard/"+response.data.staffuser.user_id;
+							} else if (response.data.context  === 6) {
+								location.href = "#/Guardiandashboard";
 							}
 						});
 					}
 
-					$scope.getdata = staffdt;
+					//$scope.getdata = staffdt;
 				} ])
 				
 				

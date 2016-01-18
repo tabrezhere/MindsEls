@@ -26,8 +26,7 @@ angular.module('theApp').factory(
 									console.log("0 NewAuthService testing response");
 									console.log("0 1NewAuthService message --- " + response.data.message);
 									console.log("0 NewAuthService staus --- " + response.data.staus.success);
-									console.log("0 NewAuthService staffuser.context --- " + response.data.data.staffuser.context);
-									
+									//console.log("0 NewAuthService staffuser.context --- " + response.data.data.staffuser.context);
 									callback(response.data);
 								});
 					}
