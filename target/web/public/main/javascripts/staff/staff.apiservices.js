@@ -8,12 +8,17 @@
 
             service.AddStaff = AddStaff;
             service.getstafflist=getstafflist;
+            service.getStaffDetails=getStaffDetails;
             return service;
 
             function AddStaff(staffDetails){
             	
             	return $http.post('/auth/signUpForStaff', staffDetails).then(handleSuccess, handleError('Error creating user'));
             	
+            }
+
+            function getStaffDetails(staffId){
+                return  $http.get('/auth/getStaffUserById/'+staffId).then(handleSuccess, handleError('Error creating user'));
             }
 
             function getstafflist(campusid){

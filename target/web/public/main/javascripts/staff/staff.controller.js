@@ -4,10 +4,18 @@
 
     angular
         .module('theApp')
-        .controller('StaffController', ['$location', '$rootScope','$scope','$http','StaffService','$stateParams',
-                                        function($location,$rootScope,$scope,$http,StaffService,$stateParams){
+        .controller('StaffController', ['$location', '$rootScope','$scope','$http','StaffService','$stateParams','$routeParams',
+                                        function($location,$rootScope,$scope,$http,StaffService,$stateParams,$routeParams){
         	var vm = this;
-        
+            $scope.staffUserId = $routeParams.staffId;
+            console.log("Inside StaffController   "+ $scope.staffUserId);
+            $scope.staffUser =  StaffService.getstaffDetails($scope.staffUserId).then(function(response){
+                                console.log("Inside StaffController");
+                                //return response.data;
+                                });       
+                   
+
+
             $scope.title = 'iam from ui router staff Controller';
             $scope.addStaff =addStaff;
             $scope.getstaff=getstaff;
