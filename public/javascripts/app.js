@@ -71,9 +71,10 @@ theApp
 									})
 											
 							.when(
-									'/staffdashboard',
+									'/staffUserDashboard/:staffId',
 									{
-										templateUrl : '/assets/partial-html-app/staff/staffdashboard.html'
+										templateUrl : '/assets/partial-html-app/staff/staffdashboard.html',
+										controller: 'StaffController'
 									// controller: 'SignupCtrl'
 									})
 													
