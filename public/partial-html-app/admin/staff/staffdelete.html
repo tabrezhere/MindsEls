@@ -1,0 +1,98 @@
+  
+
+
+<div class="container">
+      <div class="row">
+     
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-0 toppad" >
+   
+    
+ 
+ 
+      
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">{{staffProfileDetails.firstName}}  {{staffProfileDetails.middleName}} {{staffProfileDetails.lastName}} </h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="/assets/images/avatar-300x300.png" class="img-circle img-responsive"> </div>
+       
+                <div class=" col-md-9 col-lg-9 "> 
+
+                  <table class="table table-user-information" >
+                    <tbody>
+                    <tr>
+                        <td>Staff Id :</td>
+                        <td> <b>{{staffProfileDetails.id}}</b></td>
+                      </tr>
+                      <tr>
+                        <td>First Name :</td>
+                        <td>{{staffProfileDetails.firstName}}</td>
+                      </tr>
+                      <tr>
+                        <td>Middle Name :</td>
+                        <td>{{staffProfileDetails.middleName}}</td>
+                      </tr>
+                   <tr>
+                        <td>Last Name :</td>
+                        <td>{{staffProfileDetails.lastName}}</td>
+                      </tr>
+                      <tr>
+                        <td>Address Home :</td>
+                        <td>staffProfileDetails.address1</td>
+                      </tr>
+                   
+                        <tr>
+                        <td>Address Office :</td>
+                        <td>{{staffProfileDetails.address2}}<br/><br/></td>
+                      </tr>
+                     
+                    
+                     
+                      
+                    </tbody>
+                  </table>
+                
+                </div>
+              </div>
+               <div class=" col-md-12 col-lg-12 "> 
+             <table class="table table-user-information" >
+                    <tbody>
+                     <tr>
+                        <td>Email :</td>
+                        <td><a href="mailto:info@support.com">{{staffProfileDetails.email}}</a></td>
+                           
+                      </tr>
+                    <tr>
+                      <td>Phone Number :</td>
+                        <td>{{staffProfileDetails.phoneNumber }}</td>
+                    </tr>
+                    <tr>
+                        <td>City : </td>
+                        <td>{{staffProfileDetails.city}}</td><td>State :</td>
+                        <td>{{staffProfileDetails.state}}</td>
+                           
+                      </tr>
+                    </tbody>
+                    </table>
+            
+            </div>
+            </div>
+            <div class=" col-md-12 col-lg-12>
+            <table>
+            </table> 
+            </div>
+                 <div class="panel-footer">
+                             <a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
+                        <span class="pull-right">
+                            <div data-original-title="Edit this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning" ng-click="deleteStaff(id)"><i class="glyphicon glyphicon-trash"></i></div>
+                            <a ui-sref="viewList" data-original-title="Remove this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                            {{medicaldetails.height}}
+                        </span>
+                    </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>     

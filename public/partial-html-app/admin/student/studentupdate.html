@@ -1,0 +1,128 @@
+	
+
+
+<div class="container">
+      <div class="row">
+     
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-0 toppad" >
+   
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Student Profile Details
+              
+                        <span class="pull-right">
+                        <a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
+                            <a ui-sref="viewStudentList" data-original-title="Remove this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                            <button type="submit" data-original-title="save this user" data-toggle="tooltip" class="btn btn-sm btn-info" ng-click="studentUpdate(id)"><i class="glyphicon glyphicon-floppy-save"></i></button>
+                        </span>
+              </h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="/assets/images/avatar-300x300.png" class="img-circle img-responsive"> </div>
+       
+                <div class=" col-md-9 col-lg-9 "> 
+
+                  <form name="form" role="form">
+                    <div class="form-group">
+                      <label for="state" class="control-label">Staff Id</label> <input
+                      type="text" class="form-control" id="state" 
+                      ng-model="studentProfileDetails.id" ng-disabled="isDisabled()">
+                    </div>
+        
+                    <div class="form-group">
+                      <label for="state" class="control-label">First Name</label> <input
+                      type="text" class="form-control" id="state"
+                      ng-model="studentProfileDetails.firstName" ng-disabled="isDisabled()">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="state" class="control-label">Middle Name</label> <input
+                      type="text" class="form-control" id="state"
+                      ng-model="studentProfileDetails.middleName" ng-disabled="isDisabled()">
+                    </div>
+                    <div class="form-group">
+                      <label for="state" class="control-label">Last Name</label> <input
+                        type="text" class="form-control" id="state"
+                        ng-model="studentProfileDetails.lastName" ng-disabled="isDisabled()">
+                    </div>
+        
+                    <div class="form-group">
+                      <label for="state" class="control-label">Residence Address</label>
+                      <input type="text" class="form-control" id="state"
+                      ng-model="studentProfileDetails.address1" ng-disabled="isDisabled()">
+                    </div>
+        
+                    <div class="form-group">
+                      <label for="state" class="control-label">Office Address</label> <input
+                        type="text" class="form-control" id="state"
+                        ng-model="studentProfileDetails.address2" ng-disabled="isDisabled()">
+                    </div>
+                    <div class="form-group">
+                      <label for="state" class="control-label">Email </label> <input
+                        type="text" class="form-control" id="state"
+                        ng-model="studentProfileDetails.email" ng-disabled="isDisabled()">
+                    </div>
+                    <div class="form-group">
+                      <label for="state" class="control-label">Phone Number</label> <input
+                        type="number" class="form-control" id="state"
+                        ng-model="studentProfileDetails.phoneNumber" ng-disabled="isDisabled()">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="state" class="control-label">City :</label> <input
+                        type="text" class="form-control" id="state"
+                        ng-model="studentProfileDetails.city" ng-disabled="isDisabled()">
+
+                    </div>
+                    <div class="form-group">
+                      <label for="state" class="control-label">State :</label>
+                      <input type="text" class="form-control" id="state"
+                        ng-model="studentProfileDetails.state" ng-disabled="isDisabled()">
+                    </div>
+                    <div class="form-group">
+                      <label for="state" class="control-label">Studentadminno :</label>
+                      <input type="text" class="form-control" id="state"
+                        ng-model="studentProfileDetails.Studentadminno" ng-disabled="isDisabled()">
+                    </div>
+                    <div class="form-group">
+                      <label for="state" class="control-label">Class_Id :</label>
+                      <input type="text" class="form-control" id="state"
+                        ng-model="studentProfileDetails.class_id" ng-disabled="isDisabled()">
+                    </div>
+                    <div class="form-group">
+                      <label for="state" class="control-label">Class Name :</label>
+                      <input type="text" class="form-control" id="state"
+                        ng-model="studentProfileDetails.className" ng-disabled="isDisabled()">
+                    </div>
+                    <div class="form-group">
+                      <label for="state" class="control-label">CampusId :</label>
+                      <input type="text" class="form-control" id="state"
+                        ng-model="studentProfileDetails.campusId" ng-disabled="isDisabled()">
+                    </div>
+                    <div class="form-group">
+                      <label for="state" class="control-label">Campus Name :</label>
+                      <input type="text" class="form-control" id="state"
+                        ng-model="studentProfileDetails.campusName" ng-disabled="isDisabled()">
+                    </div>
+                    <div class="form-group">
+                      <label for="state" class="control-label">OrgId :</label>
+                      <input type="text" class="form-control" id="state"
+                        ng-model="studentProfileDetails.orgId" ng-disabled="isDisabled()">
+                    </div>
+                    <div class="form-group">
+                      <label for="state" class="control-label">OrgName :</label>
+                      <input type="text" class="form-control" id="state"
+                        ng-model="studentProfileDetails.orgName" ng-disabled="isDisabled()">
+                    </div>
+                    <div class="form-group">
+                      <label for="state" class="control-label">Vehicle Id :</label>
+                      <input type="text" class="form-control" id="state"
+                        ng-model="studentProfileDetails.vehicleId" ng-disabled="isDisabled()">
+                    </div>
+                </form>
+            
+              </div>
+            </div>
+        </div>
+    </div>		 
