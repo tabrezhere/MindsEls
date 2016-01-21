@@ -6,33 +6,63 @@
 		<form name="form" ng-submit="registerstaff()" role="form">
 			<div class="col-md-6">
 				<div class="form-group">
-					<label for="state" class="control-label">Email </label> <input
-						type="text" class="form-control" id="state"
-						ng-model="staffuser.identifier" ng-disabled="isDisabled()">
+                <label for="identifier" class="control-label">Email ID :</label> 
+				<input type="email" class="form-control" id="identifier" name="email" ng-model="staffuser.identifier" ng-disabled="isDisabled()" ng-minlength="5" ng-maxlength="20" required>
+				<div class="help-block" ng-messages="form.email.$error">
+    				<p ng-message="required">Email is required</p>
+					<p ng-message="minlength">Email is too short</p>
+					<p ng-message="maxlength">Email is too long</p>
+					<p ng-message="email">This needs to be a valid email</p>
 				</div>
+				</div>	
 				<div class="form-group">
 					<label for="state" class="control-label">Password</label> <input
-						type="text" class="form-control" id="state"
-						ng-model="staffuser.password" ng-disabled="isDisabled()">
+					type="text" class="form-control" id="state" name="password"
+					ng-model="staffuser.password" ng-disabled="isDisabled()" ng-minlength="5"
+                	ng-maxlength="20" required>
+                	<div class="help-block" ng-messages="form.password.$error" ng-if="form.password.$touched">
+    				<p ng-message="minlength">Password is too short.</p>
+    				<p ng-message="maxlength">Password is too long.</p>
+    				<p ng-message="required">Password is required.</p>
+					</div>
+
 				</div>
 
 				<div class="form-group">
 					<label for="state" class="control-label">First Name</label> <input
-						type="text" class="form-control" id="state"
-						ng-model="staffuser.firstName" ng-disabled="isDisabled()">
-				</div>a
+						type="text" class="form-control" id="state" name="firstName"
+						ng-model="staffuser.firstName" ng-disabled="isDisabled()" ng-minlength="5"
+                		ng-maxlength="20" required>
+                		<div class="help-block" ng-messages="form.firstName.$error" ng-if="form.firstName.$touched">
+    						<p ng-message="minlength">First Name is too short.</p>
+    						<p ng-message="maxlength">First Name is too long.</p>
+    						<p ng-message="required">First Name is required.</p>
+						</div>
+				</div>
 
 				<div class="form-group">
 					<label for="state" class="control-label">Middle Name</label> <input
-						type="text" class="form-control" id="state"
+						type="text" class="form-control" id="state" name="middleName"
 						ng-model="staffuser.middleName" ng-disabled="isDisabled()"
-						placeholder="Enter First Name">
+						placeholder="Enter First Name" ng-minlength="5"
+                		ng-maxlength="20" required>
+                		<div class="help-block" ng-messages="form.middleName.$error" ng-if="form.middleName.$touched">
+    						<p ng-message="minlength">Middle Name is too short.</p>
+    						<p ng-message="maxlength">Middle Name is too long.</p>
+    						<p ng-message="required">Middle Name is required.</p>
+						</div>
 				</div>
 				<div class="form-group">
 					<label for="state" class="control-label">Last Name</label> <input
-						type="text" class="form-control" id="state"
+						type="text" class="form-control" id="state" name="lastName"
 						ng-model="staffuser.lastName" ng-disabled="isDisabled()"
-						placeholder="Enter Last Name">
+						placeholder="Enter Last Name" ng-minlength="5"
+                		ng-maxlength="20" required>
+                		<div class="help-block" ng-messages="form.lastName.$error" ng-if="form.lastName.$touched">
+    						<p ng-message="minlength">Last Name is too short.</p>
+    						<p ng-message="maxlength">Last Name is too long.</p>
+    						<p ng-message="required">Last Name is required.</p>
+						</div>
 				</div>
 				
 				<div class="form-group">
@@ -49,8 +79,13 @@
 			    
 			    	<div class="form-group">
 					<label for="state" class="control-label">DOB</label> 
-					<input type="date" class="form-control" id="state" 	ng-model="staffuser.dob" ng-disabled="isDisabled()"
-						placeholder="DOB YYYY-MM-DD">
+					<input type="date" class="form-control" id="state" name="DOB" ng-model="staffuser.dob" ng-disabled="isDisabled()"
+						placeholder="DOB YYYY-MM-DD" ng-minlength="5" ng-maxlength="20" required>
+                		<div class="help-block" ng-messages="form.DOB.$error">
+    						<p ng-message="minlength">DOB is too short.</p>
+    						<p ng-message="maxlength">DOB is too long.</p>
+    						<p ng-message="required">DOB is required.</p>
+						</div>
 				</div>
 			   
 			</div>
@@ -64,29 +99,43 @@
 				
 				<div class="form-group">
 					<label for="state" class="control-label">Residence Address</label>
-					<input type="text" class="form-control" id="state"
-						ng-model="staffuser.address1" ng-disabled="isDisabled()"
-						placeholder="Enter Address ">
+					<input type="text" class="form-control" id="state" name="ResidenceAddress"
+					ng-model="staffuser.address1" ng-disabled="isDisabled()" placeholder="Enter Address" required>
+                	<div class="help-block" ng-messages="form.ResidenceAddress.$error" ng-if="form.ResidenceAddress.$touched">
+   						<p ng-message="required">Residence Address is required.</p>
+					</div>
 				</div>
 				
 				<div class="form-group">
 					<label for="state" class="control-label">Phone Number</label> <input
-						type="number" class="form-control" id="state"
-						ng-model="staffuser.phoneNumber" ng-disabled="isDisabled()">
+						type="number" class="form-control" id="state" name="PhoneNumber"
+						ng-model="staffuser.phoneNumber" ng-disabled="isDisabled()" ng-pattern="/^[0-9]$/" required>
+                		<div class="help-block" ng-messages="form.PhoneNumber.$error" ng-if="form.PhoneNumber.$touched">
+    						<p ng-message="required">Phone Number is required.</p>
+    						<p ng-message="number">Must be a Number.</p>
+    						<p ng-message="pattern">Phone Number must be 10 digit.</p>
+						</div>
 				</div>
 
 				<div class="form-group">
 					<label for="state" class="control-label">Office Address</label> <input
-						type="text" class="form-control" id="state"
+						type="text" class="form-control" id="state" name="OfficeAddress"
 						ng-model="staffuser.address2" ng-disabled="isDisabled()"
-						placeholder="Enter Address ">
+						placeholder="Enter Address " ng-minlength="5" required>
+                		<div class="help-block" ng-messages="form.OfficeAddress.$error" ng-if="form.OfficeAddress.$touched">
+    						<p ng-message="minlength">Office Address is too short.</p>
+    						<p ng-message="required">Office Address is required.</p>
+						</div>
 				</div>
 
 				<div class="form-group">
 					<label for="state" class="control-label">City :</label> <input
-						type="text" class="form-control" id="state"
+						type="text" class="form-control" id="state" name="city"
 						ng-model="staffuser.city" ng-disabled="isDisabled()"
-						placeholder="Enter Address ">
+						placeholder="Enter Address " required>
+                		<div class="help-block" ng-messages="form.city.$error" ng-if="form.city.$touched">
+    						<p ng-message="required">City is required.</p>
+						</div>
 				</div>
 				<div class="form-group">
 					<label for="state" class="control-label">State :</label>
