@@ -2,7 +2,7 @@
 
 /* App Module */
 
-var theApp = angular.module('theApp', [ 'ngRoute', 'appControllers',
+var theApp = angular.module('theApp', [ 'ngRoute', 'appControllers', 'ngMessages',
 		'appDirectives', 'appServices', 'appConstants', 'ui.router','angularUtils.directives.dirPagination' ]);
 
 /*
@@ -310,6 +310,20 @@ theApp
 										templateUrl : '/assets/partial-html-app/admin/staff/addstaff.html',
 										controller : 'RegisterController'
 									})
+							.state("staffEdit", {
+								
+								    templateUrl: '/assets/partial-html-app/admin/staff/staffedit.html',
+								    params : { staffID: null },
+								 controller: 'AdminStaffEditController'
+							})	
+							.state(
+									'StaffDelete',
+									{
+										templateUrl : '/assets/partial-html-app/admin/staff/staffdelete.html',
+										params : { staffID: null },
+								 controller: 'AdminStaffEditController'
+									})
+
 									
 							.state(
 									'signupguardian',
@@ -404,6 +418,13 @@ theApp
 										templateUrl : '/assets/partial-html-app/admin/student/student.html',
 										controller : 'AdminStudController'
 									})
+
+							.state("studentUpdate", {
+								
+								    templateUrl: '/assets/partial-html-app/admin/student/studentupdate.html',
+								    params : { studentID: null },
+								 controller: 'AdminStudentUpdateController'
+							})	
 
 							.state(
 									'TransportviewList',

@@ -25,6 +25,8 @@
             service.GetnewslistbyCampusId=GetnewslistbyCampusId;
             service.GetclassTimetablebyClassId=GetclassTimetablebyClassId;
             service.getAllClassesByCampusId=getAllClassesByCampusId;
+            service.getStaffByStaffId=getStaffByStaffId;
+            service.getStudentByStudentId=getStudentByStudentId;
             
             return service;
             
@@ -59,7 +61,30 @@
 				});
 				
 			   }
+
+
+
+         function getStaffByStaffId(staffId,callback){
+              AdminServiceAPI.getStaffUserById(staffId).then(function(response){
+                
+                 console.log("Staff Details yet to be displayed");
+                  var response1 = response.data;
+                  console.log("Staff Details :"+response1);
+                  callback(response1);
+                    
+                  });
+            }
             
+            function getStudentByStudentId(studentId,callback){
+              AdminServiceAPI.GetStudentInfoById(studentId).then(function(response){
+                
+                 console.log("Staff Details yet to be displayed");
+                  var response1 = response.data;
+                  console.log("Staff Details :"+response1);
+                  callback(response1);
+                    
+                  });
+            }
             
             
             function getAllCampusByOrganizationId(OrganizationId,callback){
