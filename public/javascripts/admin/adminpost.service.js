@@ -25,6 +25,10 @@
             service.GetnewslistbyCampusId=GetnewslistbyCampusId;
             service.GetclassTimetablebyClassId=GetclassTimetablebyClassId;
             service.getAllClassesByCampusId=getAllClassesByCampusId;
+            service.getStaffByStaffId=getStaffByStaffId;
+            service.getStudentByStudentId=getStudentByStudentId;
+            service.getGuardianByGuardianId=getGuardianByGuardianId;
+           service.getAllGuardianListByCampusId=getAllGuardianListByCampusId;
             
             return service;
             
@@ -59,6 +63,41 @@
 				});
 				
 			   }
+
+
+         function getStaffByStaffId(staffId,callback){
+              AdminServiceAPI.getStaffUserById(staffId).then(function(response){
+                
+                 console.log("Staff Details yet to be displayed");
+                  var response1 = response.data;
+                  console.log("Staff Details :"+response1);
+                  callback(response1);
+                    
+                  });
+            }
+
+            function getGuardianByGuardianId(guardianId,callback){
+              AdminServiceAPI.getGuardianUserById(guardianId).then(function(response){
+                
+                 console.log("guardian Details yet to be displayed");
+                  var response1 = response.data;
+                  console.log("guardian Details :"+response1);
+                  callback(response1);
+                    
+                  });
+            }
+
+
+            function getStudentByStudentId(studentId,callback){
+              AdminServiceAPI.GetStudentInfoById(studentId).then(function(response){
+                
+                 console.log("Student Details yet to be displayed");
+                  var response1 = response.data;
+                  console.log("Student Details :"+response1);
+                  callback(response1);
+                    
+                  });
+            }
             
             
             
@@ -100,10 +139,21 @@
 				var response1 = response.data;
 				callback(response1);
 					
-				});
-            	
-            	
+				});        		
             }
+
+            function getAllGuardianListByCampusId(campusid,callback)
+            {
+              AdminServiceAPI.getAllGuardianListByCampusId(campusid).then(function(response){
+        var response1 = response.data;
+        callback(response1);
+          
+        });
+              
+              
+            }
+
+
             
             function GetStaffListbyCampusId(campusid,callback)
             {
@@ -151,9 +201,9 @@
      				});
              }
              
-             function Getvehicleroutebyvid(vid,callback){
+             function Getvehicleroutebyvid(vehicleId,callback){
               	
-              	AdminServiceAPI.Getvehicleroutebyvid(vid).then(function(response){
+              	AdminServiceAPI.Getvehicleroutebyvid(vehicleId).then(function(response){
       				var response1 = response.data;
       				callback(response1);
       					
