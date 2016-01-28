@@ -1,0 +1,42 @@
+
+<div ng-controller="AdminStaffController">
+ 
+ //commit guardianprofile 
+
+ <h3>Guardian Profile Details</h3>
+ 
+  
+<table class="table table-bordered table-striped" >
+    		
+		      <tr>  		      	<td>Guardian Id</td> <td>{{guardianProfileDetails.user_id }}</td></tr>
+		      	<tr> <td>First Name </td>   <td>{{ guardianProfileDetails.firstName }}</td></tr>
+		         <tr><td>Last Name </td> <td>{{guardianProfileDetails.lastName}}</td></tr>
+		       <tr> <td>Middle Name</td>  <td>{{guardianProfileDetails.middleName}}</td></tr>
+		       <tr>  <td>Address Home</td> <td>{{guardianProfileDetails.address1}}</td></tr>
+		       <tr> <td>Address Office</td> <td>{{guardianProfileDetails.address2}}</td></tr>
+		      <tr>  <td>Email ID :	</td> <td>{{ guardianProfileDetails.email }}</td></tr>
+		      <tr>   <td>Phone No </td> <td>{{guardianProfileDetails.mobile }}</td></tr>
+		       <tr> <td>City</td>  <td>{{guardianProfileDetails.city}}</td></tr> 	 
+		      <tr> 	<td>State</td><td>{{guardianProfileDetails.state}}</td></tr>  
+		      <tr> 	<td>Relationship</td><td>{{guardianProfileDetails.relationship}}</td></tr> 
+		      <tr> 	<td>Income</td><td>{{guardianProfileDetails.income}}</td></tr> 
+		      <tr> 	<td>Education</td><td>{{guardianProfileDetails.education}}</td></tr>  
+		      <tr> 	<td>Student Admission Number</td><td>{{guardianProfileDetails.stdadmissionno}}</td></tr> 
+		      <tr> 	<td>CampusId</td><td>{{guardianProfileDetails.campusId}}</td></tr> 
+		      <tr> 	<td>Campus Name</td><td>{{guardianProfileDetails.campusName}}</td></tr> 
+		      <tr> 	<td>OrgId</td><td>{{guardianProfileDetails.orgId}}</td></tr> 
+		      <tr> 	<td>OrgName</td><td>{{guardianProfileDetails.orgName}}</td></tr> 
+		       			      
+		    
+	   		 </table>
+
+
+   <div class="panel-footer">
+                        <a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
+                        <span class="pull-right">
+                            <a ui-sref="guardianUpdate({guardianID : guardianProfileDetails.user_id })" data-original-title="Edit this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i></a>
+                            <a ui-sref="viewguardianList" data-original-title="Remove this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                        </span>
+                    </div>
+
+</div>				 

@@ -1,0 +1,139 @@
+
+<div class="container">
+      <div class="row">
+        <div>
+            <h3>{{message}}</h3>
+        </div>
+     
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-0 toppad" >
+   
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Guardian Details
+              
+                        <span class="pull-right">
+                        <a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
+                            <a ui-sref="viewguardianList" data-original-title="Remove this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                            <button type="submit" data-original-title="save this user" data-toggle="tooltip" class="btn btn-sm btn-warning" ng-click="guardianUpdate()"><i class="glyphicon glyphicon-floppy-save"></i></button>
+                        </span>
+              </h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="/assets/images/avatar-300x300.png" class="img-circle img-responsive"> </div>
+       
+                <div class=" col-md-9 col-lg-9 "> 
+                 <form name="form" role="form">
+          <div class="col-md-6">
+          <div class="form-group">
+            <label for="identifier" class="control-label">GuardianId</label><input type="text" class="form-control" id="identifier" name="identifier" ng-model="guardianProfileDetails.user_id" ng-disabled="isDisabled()" required>
+                    <div class="help-block" ng-messages="form.identifier.$error" ng-if="form.identifier.$touched">
+                <p ng-message="required">GuardianId is required.</p>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="firstName" class="control-label">First Name</label> <input type="text" class="form-control" id="firstName" name="firstName" ng-model="guardianProfileDetails.firstName" ng-disabled="isDisabled()" ng-minlength="5"ng-maxlength="20" required>
+                    <div class="help-block" ng-messages="form.firstName.$error" ng-if="form.firstName.$touched">
+                <p ng-message="minlength">First Name is too short.</p>
+                <p ng-message="maxlength">First Name is too long.</p>
+                <p ng-message="required">First Name is required.</p>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="middleName" class="control-label">Middle Name</label> <input type="text" class="form-control" id="middleName" name="middleName" ng-model="guardianProfileDetails.middleName" ng-disabled="isDisabled()" ng-minlength="5" ng-maxlength="20" required>
+                    <div class="help-block" ng-messages="form.middleName.$error" ng-if="form.middleName.$touched">
+                <p ng-message="minlength">Middle Name is too short.</p>
+                <p ng-message="maxlength">Middle Name is too long.</p>
+                <p ng-message="required">Middle Name is required.</p>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="lastName" class="control-label">Last Name</label> <input type="text" class="form-control" id="lastName" name="lastName" ng-model="guardianProfileDetails.lastName" ng-disabled="isDisabled()" ng-minlength="5"
+                    ng-maxlength="20" required>
+                    <div class="help-block" ng-messages="form.lastName.$error" ng-if="form.lastName.$touched">
+                <p ng-message="minlength">Last Name is too short.</p>
+                <p ng-message="maxlength">Last Name is too long.</p>
+                <p ng-message="required">Last Name is required.</p>
+            </div>
+          </div>      
+          <div class="form-group">
+            <label for="campusId" class="control-label">Campus</label> <input type="number" class="form-control" id="campusId" name="campusId" ng-model="guardianProfileDetails.campusId" ng-disabled="isDisabled()" required>
+                    <div class="help-block" ng-messages="form.campusId.$error" ng-if="form.campusId.$touched">
+                <p ng-message="required">campusId is required.</p>
+            </div> 
+          </div>        
+          <div class="form-group">
+            <label for="address1" class="control-label">Address Office</label> <input type="text" class="form-control" id="address1" name="address1" ng-model="guardianProfileDetails.address1" ng-disabled="isDisabled()" ng-minlength="5" required>
+                    <div class="help-block" ng-messages="form.address1.$error" ng-if="form.address1.$touched">
+                <p ng-message="minlength">Address Office is too short.</p>
+                <p ng-message="required">Address Office is required.</p>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="address2" class="control-label">Address Residence</label> <input type="text" class="form-control" id="address2" name="address2" ng-model="guardianProfileDetails.address2" ng-disabled="isDisabled()" ng-minlength="5" required>
+                    <div class="help-block" ng-messages="form.address2.$error" ng-if="form.address2.$touched">
+                <p ng-message="minlength">Address Residence is too short.</p>
+                <p ng-message="required">Address Residence is required.</p>
+            </div>
+          </div>
+          
+        </div>
+           <div class="col-md-6">
+                  <div class="form-group">
+             <label for="city" class="control-label">City</label> <input type="text" class="form-control" id="city" 
+             name="city" ng-model="guardianProfileDetails.city" ng-disabled="isDisabled()" required>
+                    <div class="help-block" ng-messages="form.city.$error" ng-if="form.city.$touched">
+                <p ng-message="required">city is required.</p>
+            </div>
+             </div>
+              <div class="form-group">
+          <label for="state" class="control-label">State :</label>
+          <input type="text" class="form-control" id="state" name="state"
+            ng-model="guardianProfileDetails.state" ng-disabled="isDisabled()" requried>
+            <div class="help-block" ng-messages="form.state.$error" ng-if="form.state.$touched">
+                <p ng-message="required">state is required.</p>
+            </div>
+        </div>
+      
+            
+          <div class="form-group">
+            <label for="relationship" class="control-label">Relationship</label> <input type="text" class="form-control" id="relationship" name="relationship" ng-model="guardianProfileDetails.relationship" ng-disabled="isDisabled" required>  
+            <div class="help-block" ng-messages="form.relationship.$error" ng-if="form.relationship.$touched">
+                <p ng-message="required">Relationship is required.</p>
+            </div>
+            </div>
+          
+          <div class="form-group">
+            <label for="mobile" class="control-label">Mobile</label> <input type="number" class="form-control" id="mobile" name="mobile" ng-model="guardianProfileDetails.mobile" ng-disabled="isDisabled()" required>  
+            <div class="help-block" ng-messages="form.mobile.$error" ng-if="form.mobile.$touched">
+                <p ng-message="required">Mobile is required.</p>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="income" class="control-label">Income</label> <input type="text" class="form-control" id="income" name="income" ng-model="guardianProfileDetails.income" ng-disabled="isDisabled()" required>  
+            <div class="help-block" ng-messages="form.income.$error" ng-if="form.income.$touched">
+                <p ng-message="required">Income is required.</p>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="education" class="control-label">Education</label> <input type="text" class="form-control" id="education" name="education" ng-model="guardianProfileDetails.education" ng-disabled="isDisabled()" required> 
+            <div class="help-block" ng-messages="form.education.$error" ng-if="form.education.$touched">
+                <p ng-message="required">Education is required.</p>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="stdadmissionno" class="control-label">Student Admission Numbers</label> <input type="text" class="form-control" id="stdadmissionno" name="stdadmissionno" ng-model="guardianProfileDetails.stdadmissionno" ng-disabled="isDisabled()" required> 
+            <div class="help-block" ng-messages="form.stdadmissionno.$error" ng-if="form.stdadmissionno.$touched">
+                <p ng-message="required">Student Admission Numbers is required.</p>
+            </div>
+          </div>         
+           
+           </div>
+    </form>
+        </div>
+        </div>
+      </div>
+    </div>     
+            
