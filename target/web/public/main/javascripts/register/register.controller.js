@@ -3,8 +3,8 @@
 
 	angular.module('theApp').controller(
 			'RegisterController',
-			[ 'AdminServiceAPI', '$location', '$rootScope', '$scope','AdminPostService',
-					function(AdminServiceAPI, $location, $rootScope, $scope,AdminPostService) {
+			[ 'AdminServiceAPI', '$location', '$rootScope', '$scope','AdminPostService','UIMessage',
+					function(AdminServiceAPI, $location, $rootScope, $scope,AdminPostService, UIMessage) {
 
 						$scope.register = register;
 						$scope.registerdriver=registerdriver;
@@ -300,10 +300,13 @@
 							$scope.staffuser.campusId=$scope.campusId;
 							$scope.dataLoading = true;
 							AdminServiceAPI.createNewStaff($scope.staffuser).then(function(response) {
+								UIMessage.success(response.message);
+
 								if (response.success) {
 									console.log("Guardian Inserted success");
 									
 								} 
+								UIMessage.error(response.message);
 							});
 							
 						}

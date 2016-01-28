@@ -26,9 +26,7 @@
 		        <td>Address Office</td>
 		        <td>Phone No </td>
 		       	<td> Email</td>
-		       	<td>Role</td>
-		       	<td>City</td>
-		       	<td>State</td>
+		       	
 		       			      
 		      </tr></b>
 		    </thead>
@@ -42,9 +40,18 @@
 		     	      <td>{{std.address2}}</td>
 		     	       <td>{{ std.phoneNumber }}</td>
 		     	    <td>{{ std.email }}</td>
-		     	     <td>{{ std.context }}</td>   
-		     	     <td>{{std.city}}</td> 	 
-		     	     <td>{{std.state}}</td>   
+		     	     <td>
+		     	     <div class="btn-group">
+					        <button type="button" class="btn btn-default">Action</button>
+					        <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
+					        <ul class="dropdown-menu">
+
+					             <li><a ui-sref="StaffProfile({staffID : std.id })">Edit Staff</a></li>
+					            <li><a ui-sref="StaffDelete({staffID : std.id })">Delete Staff</a></li>
+
+					        </ul>
+					    </div>
+		     	     </td> 
 		     	</tr>
 	   		 </tbody>
 	   		 <tfoot>

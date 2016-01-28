@@ -14,6 +14,9 @@
 					function($location, $rootScope, $scope, $http, $routeParams) {
        		
 						//$scope.reset=reset;
+						
+						
+
 						$scope.adminstaffobj = {
 								 username: 'Tabrez',
 								 password: 2,
@@ -31,7 +34,7 @@
 								};
 						
 						$scope.guardianList= [ {
-						    "id": 3,
+						    "id": 20,
 						    "email": "parent3@gmail.com",
 						    "firstName": "parent3",
 						    "lastName": "parent3",
@@ -44,7 +47,7 @@
 						    "context": "Parent/Guardian",
 						    "user_id": 19,
 						    "relationship": "Mother",
-						    "mobile": 9630125478,
+						    "phoneNumber": 9630125478,
 						    "income": "Fifty Thousand",
 						    "education": "UnderGraduate",
 						    "studentdetails": [{"FirstName":"Ali","MiddleName":"Mohd","Lastname":"pasha","Studentadminno":"adm1"},{"FirstName":"Shafi","MiddleName":"Khan","Lastname":"Mohd","Studentadminno":"adm2"}],
@@ -53,7 +56,7 @@
 						    "orgId": 1,
 						    "orgName": "Minds"
 						  },{
-							    "id": 2,
+							    "id": 10,
 							    "email": "parent2@gmail.com",
 							    "firstName": "parent2",
 							    "lastName": "parent2",
@@ -66,7 +69,7 @@
 							    "context": "Parent/Guardian",
 							    "user_id": 19,
 							    "relationship": "father",
-							    "mobile": 9630145478,
+							    "phoneNumber": 9630145478,
 							    "income": "Fifty Thousand",
 							    "education": "UnderGraduate",
 							    "studentdetails": [{"FirstName":"zishan","MiddleName":"ahmed","Lastname":"ahmed","Studentadminno":"adm6"}],

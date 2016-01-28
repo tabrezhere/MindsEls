@@ -1,0 +1,164 @@
+	
+
+
+<div class="container">
+      <div class="row">
+        <div>
+            <h3>{{message}}</h3>
+        </div>
+     
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-0 toppad" >
+   
+ 		
+ 
+ 
+ 			
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Staff Details
+              
+                        <span class="pull-right">
+                        <a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
+                            <a ui-sref="viewList" data-original-title="Remove this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                            <button type="submit" data-original-title="save this user" data-toggle="tooltip" class="btn btn-sm btn-warning" ng-click="staffUpdate()"><i class="glyphicon glyphicon-floppy-save"></i></button>
+                        </span>
+              </h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="/assets/images/avatar-300x300.png" class="img-circle img-responsive"> </div>
+       
+                <div class=" col-md-9 col-lg-9 "> 
+
+                  <form name="form" ng-submit="registerstaff()" role="form">
+                    <div class="col-md-6">
+                    <div class="form-group">
+                    <label for="state" class="control-label">Email </label> <input
+                      type="text" class="form-control" id="state" name="email"
+                      ng-model="staffProfileDetails.email" ng-disabled="isDisabled()" ng-minlength="5"
+                      ng-maxlength="20" required>
+                    <div class="help-block" ng-messages="form.email.$error">
+                      <p ng-message="required">Email is required</p>
+                       <p ng-message="minlength">Email is too short</p>
+                      <p ng-message="maxlength">Email is too long</p>
+                      <p ng-message="email">This needs to be a valid email</p>
+                     </div>
+
+                    </div>
+        
+
+                    <div class="form-group">
+                      <label for="state" class="control-label">First Name</label> <input
+                        type="text" class="form-control" id="state" name="firstName"
+                        ng-model="staffProfileDetails.firstName" ng-disabled="isDisabled()" ng-minlength="5"
+                                ng-maxlength="20" required>
+                                <div class="help-block" ng-messages="form.firstName.$error" ng-if="form.firstName.$touched">
+                            <p ng-message="minlength">First Name is too short.</p>
+                            <p ng-message="maxlength">First Name is too long.</p>
+                            <p ng-message="required">First Name is required.</p>
+                        </div>
+                    </div>
+
+                  <div class="form-group">
+                    <label for="state" class="control-label">Middle Name</label> <input
+                      type="text" class="form-control" id="state" name="middleName"
+                      ng-model="staffProfileDetails.middleName" ng-disabled="isDisabled()"
+                      placeholder="Enter First Name" ng-minlength="5"
+                              ng-maxlength="20" required>
+                              <div class="help-block" ng-messages="form.middleName.$error" ng-if="form.middleName.$touched">
+                          <p ng-message="minlength">Middle Name is too short.</p>
+                          <p ng-message="maxlength">Middle Name is too long.</p>
+                          <p ng-message="required">Middle Name is required.</p>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="state" class="control-label">Last Name</label> <input
+                      type="text" class="form-control" id="state" name="lastName"
+                      ng-model="staffProfileDetails.lastName" ng-disabled="isDisabled()"
+                      placeholder="Enter Last Name" ng-minlength="5"
+                              ng-maxlength="20" required>
+                              <div class="help-block" ng-messages="form.lastName.$error" ng-if="form.lastName.$touched">
+                          <p ng-message="minlength">Last Name is too short.</p>
+                          <p ng-message="maxlength">Last Name is too long.</p>
+                          <p ng-message="required">Last Name is required.</p>
+                      </div>
+ 
+                   </div>   
+                  
+                    
+                    <div class="form-group">
+                      <label for="state" class="control-label">Residence Address</label>
+                      <input type="text" class="form-control" id="state" name="ResidenceAddress"
+                      ng-model="staffProfileDetails.address1" ng-disabled="isDisabled()" placeholder="Enter Address" required>
+                              <div class="help-block" ng-messages="form.ResidenceAddress.$error" ng-if="form.ResidenceAddress.$touched">
+                          <p ng-message="required">Residence Address is required.</p>
+                      </div>
+                    </div>
+        
+                
+
+              <div class="form-group">
+                <label for="state" class="control-label">Office Address</label> <input
+                  type="text" class="form-control" id="state" name="OfficeAddress"
+                  ng-model="staffProfileDetails.address2" ng-disabled="isDisabled()"
+                  placeholder="Enter Address " ng-minlength="5" required>
+                          <div class="help-block" ng-messages="form.OfficeAddress.$error" ng-if="form.OfficeAddress.$touched">
+                      <p ng-message="minlength">Office Address is too short.</p>
+                      <p ng-message="required">Office Address is required.</p>
+                  </div>
+              </div>
+
+              <div class="form-group">
+                  <label for="state" class="control-label">Phone Number</label> <input
+                    type="number" class="form-control" id="state" name="PhoneNumber"
+                    ng-model="staffProfileDetails.phoneNumber" ng-disabled="isDisabled()" required>
+                            <div class="help-block" ng-messages="form.PhoneNumber.$error" ng-if="form.PhoneNumber.$touched">
+                        <p ng-message="required">Phone Number is required.</p>
+                        <p ng-message="number">Must be a Number.</p>
+                        
+                    </div>
+                </div>
+                  </div>
+
+                  <div class="col-md-6">
+              <div class="form-group">
+                <label for="state" class="control-label">City :</label> <input
+                  type="text" class="form-control" id="state" name="city"
+                  ng-model="staffProfileDetails.city" ng-disabled="isDisabled()" required>
+                          <div class="help-block" ng-messages="form.city.$error" ng-if="form.city.$touched">
+                      <p ng-message="required">City is required.</p>
+                  </div>
+              </div>
+               <div class="form-group">
+                <label for="state" class="control-label">State :</label> <input
+                  type="text" class="form-control" id="state" name="state"
+                  ng-model="staffProfileDetails.state" ng-disabled="isDisabled()" required>
+                          <div class="help-block" ng-messages="form.state.$error" ng-if="form.state.$touched">
+                      <p ng-message="required">state is required.</p>
+                  </div>
+              </div>
+              <div class="form-group">
+                <label for="state" class="control-label">Subject Name :</label> <input
+                  type="text" class="form-control" id="state" name="subjectName"
+                  ng-model="staffProfileDetails.subjectName" ng-disabled="isDisabled()" required>
+                          <div class="help-block" ng-messages="form.subjectName.$error" ng-if="form.subjectName.$touched">
+                      <p ng-message="required">Subject Name is required.</p>
+                  </div>
+              </div>
+              <div class="form-group">
+                <label for="state" class="control-label">VehicleId :</label> <input
+                  type="text" class="form-control" id="state" name="vehicleId"
+                  ng-model="staffProfileDetails.vehicleId" ng-disabled="isDisabled()" required>
+                          <div class="help-block" ng-messages="form.vehicleId.$error" ng-if="form.vehicleId.$touched">
+                      <p ng-message="required">vehicleId is required.</p>
+                  </div>
+              </div>
+                 
+              </div>
+             
+    </form>
+        </div>
+        </div>
+      </div>
+    </div>     
+            

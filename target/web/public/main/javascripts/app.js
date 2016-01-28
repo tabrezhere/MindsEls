@@ -2,7 +2,7 @@
 
 /* App Module */
 
-var theApp = angular.module('theApp', [ 'ngRoute', 'appControllers',
+var theApp = angular.module('theApp', [ 'ngRoute', 'appControllers', 'ngMessages',
 		'appDirectives', 'appServices', 'appConstants', 'ui.router','angularUtils.directives.dirPagination' ]);
 
 /*
@@ -279,6 +279,20 @@ theApp
 											templateUrl : '/assets/partial-html-app/admin/guardian/vehicledetails.html',
 											controller : 'DropdownCtrl'
 										})
+
+								.state('guardianProfile', {
+								
+								    templateUrl: '/assets/partial-html-app/admin/guardian/guardianprofile.html',
+								    params : { guardianID: null },
+								 controller: 'AdminGuardianUpdateController'
+							})
+										
+								.state('guardianUpdate', {
+								
+								    templateUrl: '/assets/partial-html-app/admin/guardian/guardianupdate.html',
+								    params : { guardianID: null },
+								 controller: 'AdminGuardianUpdateController'
+							})
 										
 								.state(
 										'vehicleroutebyvid',
@@ -339,7 +353,7 @@ theApp
 									'viewguardianList',
 									{
 										templateUrl : '/assets/partial-html-app/admin/guardian/guradianlist.html',
-										controller : 'AdminCampusController'
+										controller : 'AdminGuardianUpdateController'
 										
 									})
 									
@@ -381,8 +395,25 @@ theApp
 									'StaffProfile',
 									{
 										templateUrl : '/assets/partial-html-app/admin/staff/staffprofile.html',
-										controller : 'NewLoginController'
+										params : { staffID: null },
+								 controller: 'AdminStaffEditController'
+										
 									})
+
+							.state('staffEdit', {
+								
+								    templateUrl: '/assets/partial-html-app/admin/staff/staffedit.html',
+								    params : { staffID: null },
+								 controller: 'AdminStaffEditController'
+							})	
+							.state(
+									'StaffDelete',
+									{
+										templateUrl : '/assets/partial-html-app/admin/staff/staffdelete.html',
+										params : { staffID: null },
+								 controller: 'AdminStaffEditController'
+									})
+
 
 							.state(
 									'StaffClass',
@@ -411,6 +442,12 @@ theApp
 										templateUrl : '/assets/partial-html-app/admin/transportation/TransportviewList.html',
 										controller : 'AdminTransportController'
 									})
+							.state('UpdateVechileList', {
+								
+								    templateUrl: '/assets/partial-html-app/admin/transportation/updatevechilelist.html',
+								    params : { vehicleID: null },
+								 controller: 'AdminTransportEditController'
+							})	
 
 							.state(
 									'viewCampusList',
@@ -475,6 +512,23 @@ theApp
 										controller : 'AdminController',
 										controllerAs : 'vm'
 									})
+
+							.state(
+									'StudentProfile',
+									{
+										templateUrl : '/assets/partial-html-app/admin/student/studentProfile.html',
+										params : { studentID: null },
+								 controller: 'AdminStudentUpdateController'
+										
+									})
+
+							.state("studentUpdate", {
+								
+								    templateUrl: '/assets/partial-html-app/admin/student/studentupdate.html',
+								    params : { studentID: null },
+								 controller: 'AdminStudentUpdateController'
+							})	
+
 							.state(
 									'getStudentInfo.detail',
 									{

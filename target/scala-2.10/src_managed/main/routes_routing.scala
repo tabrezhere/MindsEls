@@ -1,6 +1,6 @@
-// @SOURCE:E:/PlayWorkspace/tabrez/test jar/Eonline_22_15_tab/Eonline_22_15_tab/conf/routes
-// @HASH:f1f71601291a1f113f3ddc5cce02ae89daf20fb5
-// @DATE:Tue Dec 15 17:47:28 IST 2015
+// @SOURCE:E:/gitworkspace/mindselsrepo/conf/routes
+// @HASH:c82113e24caa210cf0549002cd4cac90f11f2c96
+// @DATE:Thu Jan 21 14:37:21 IST 2016
 
 
 import play.core._

@@ -43,7 +43,7 @@
 			<tbody>
 		
 				<tr dir-paginate="std in TransportList |itemsPerPage:10|  filter:searchvehicle ">
-					<td><a href="" ng-click="TransportListbyId(std.id)">
+					<td><a ui-sref="UpdateVechileList({vehicleID : std.id })" >
 					{{std.id }}</a></td>
 					<td>{{ std.Vehicle_no }}</td>
 					<td>{{ std.Vehicle_code }}</td>

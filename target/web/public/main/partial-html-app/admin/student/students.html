@@ -38,9 +38,7 @@
 					<td>Student Address</td>
 					<td>Student Address2</td>
 					<td>Student Phone no</td>
-					<td>Email</td>
-					<td>City</td>
-					<td>State</td>
+					
 							
 						
 						
@@ -58,16 +56,25 @@
 				<tr dir-paginate="std in studentList|itemsPerPage:10 | filter:searchStudent">
 				    <td>{{std.id}}</td>
 				   <td>{{ std.Studentadminno }}</td>
-					<td><a href="" ng-click="showStudentModal( std.id )">{{	std.firstName }}</a></td>
+					<td><a ui-sref="notep" ng-click="myStudentModal( std.id )">{{	std.firstName }}</a></td>
 					<td>{{ std.middleName }}</td>
 					<td>{{ std.lastName }}</td>
 					<td>{{std.class_id}}</td>
 					<td>{{ std.address1 }}</td>
 					<td>{{ std.address2 }}</td>
 					<td>{{ std.phoneNumber }}</td>
-					<td>{{ std.email }}</td>		
-					<td>{{ std.city }}</td>
-					<td>{{ std.state }}</td>
+					<td>
+		     	     <div class="btn-group">
+					        <button type="button" class="btn btn-default">Action</button>
+					        <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
+					        <ul class="dropdown-menu">
+
+					             <li><a ui-sref="StudentProfile({studentID : std.id })">Edit Student</a></li>
+					            <li><a ui-sref="StudentDelete({staffID : std.id })">Delete Student</a></li>
+
+					        </ul>
+					    </div>
+		     	     </td> 
 				</tr>
 			</tbody>
 			<tfoot>

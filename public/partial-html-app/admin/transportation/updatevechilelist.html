@@ -1,0 +1,110 @@
+	
+
+
+<div class="container">
+      <div class="row">
+     
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-0 toppad" >
+   
+ 		
+ 
+ 
+ 			
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Vehicle List
+              
+                        <span class="pull-right">
+                        <a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
+                            <a ui-sref="TransportviewList" data-original-title="Remove this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                            <button type="submit" data-original-title="save this user" data-toggle="tooltip" class="btn btn-sm btn-warning" ng-click="vehicleUpdate()"><i class="glyphicon glyphicon-floppy-save"></i></button>
+                        </span>
+              </h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="/assets/images/avatar-300x300.png" class="img-circle img-responsive"> </div>
+       
+                <div class=" col-md-9 col-lg-9 "> 
+                <form name="form" role="form">
+    
+     <div class="col-md-6">
+     
+            <div class="form-group">
+        <label for="Vehicle_no" class="control-label">Vehicle_no</label> <input type="text" class="form-control" id="Vehicle_no" ng-model="vehicleListDetails.Vehicle_no" ng-disabled="isDisabled()">
+          </div>
+           <div class="form-group">
+        <label for="Vehicle_code" class="control-label">Vehicle_code</label> <input type="text" class="form-control" id="Vehicle_code" ng-model="vehicleListDetails.Vehicle_code" ng-disabled="isDisabled()">
+           </div>
+          <div class="form-group">
+        <label for="No_of_Seat" class="control-label">No_of_Seat</label> <input type="number" class="form-control" id="No_of_Seat" ng-model="vehicleListDetails.No_of_Seat" ng-disabled="isDisabled()">
+          </div>
+          <div class="form-group">
+          <label for="Maximum_capacity" class="control-label">Maximum_capacity</label> <input type="number" class="form-control" id="Maximum_capacity" ng-model="vehicleListDetails.Maximum_capacity" ng-disabled="isDisabled()">
+          </div>
+          <div class="form-group">
+        <label for="insurance" class="control-label">Insurance</label> <input type="text" class="form-control" id="insurance" ng-model="vehicleListDetails.insurance" ng-disabled="isDisabled()">
+          </div>
+          <div class="form-group">
+        <label for="tax_remitted" class="control-label">Tax_remitted</label> <input type="text" class="form-control" id="tax_remitted" ng-model="vehicleListDetails.tax_remitted" ng-disabled="isDisabled()">
+          </div>
+        <div class="form-group">
+        <label for="permit" class="control-label">Permit</label> <input type="text" class="form-control" id="permit" ng-model="vehicleListDetails.permit" ng-disabled="isDisabled()">
+          </div>
+          <div class="form-group">
+        <label for="status" class="control-label">Status</label> <input type="text" class="form-control" id="status" ng-model="vehicleListDetails.status" ng-disabled="isDisabled()">
+          </div>
+          <div class="form-group">
+          <label for="Vehicle_type_id" class="control-label">Vehicle_type</label>
+             <input type="text" class="form-control" id="status" ng-model="vehicleListDetails.Vehicle_type_id" ng-disabled="isDisabled()">    
+          </div>
+     
+     </div>
+      <div class="col-md-6">
+           <div class="form-group">
+        <label for="Route_Name" class="control-label">Campus ID</label> <input type="number" class="form-control" id="CampusId" ng-model="vehicleListDetails.campusId" ng-disabled="isDisabled()">
+          </div>
+            <div class="form-group">
+        <label for="Route_Name" class="control-label">Route_Name</label> <input type="text" class="form-control" id="Route_Name" ng-model="vehicleListDetails.Route_Name" ng-disabled="isDisabled()">
+          </div>
+      
+          <div class="form-group">
+        <label for="No_of_Stops" class="control-label">Enter No_of_Stops Names Seperated by Comma</label> <input type="number" class="form-control" id="No_of_Stops" ng-model="vehicleListDetails.No_of_Stops" ng-disabled="isDisabled()">
+          </div>
+      
+          <div class="form-group">
+        <label for="Stop_Name" class="control-label">Ente Stop_Names Seperated by Comma</label> <input type="text" class="form-control" id="Stop_Name" ng-model="vehicleListDetails.Stop_Name" ng-disabled="isDisabled()">
+          </div>
+      
+         <div class="form-group">
+        <label for="fare" class="control-label">Enter Fare Seperated by Comma</label> <input type="text" class="form-control" id="fare" ng-model="vehicleListDetails.fare" ng-disabled="isDisabled()">
+         </div>
+      
+         <div class="form-group">
+        <label for="Arival_Mrng" class="control-label">Enter Arival_Mrng Seperated by Comma</label> <input type="text" class="form-control" id=Arival_Mrng ng-model="vehicleListDetails.Arival_Mrng" ng-disabled="isDisabled()">
+        </div>
+        
+         <div class="form-group">
+        <label for="Departure_Mrng" class="control-label">Enter Departure_Mrng Seperated by Comma</label> <input type="text" class="form-control" id="Departure_Mrng" ng-model="vehicleListDetails.Departure_Mrng" ng-disabled="isDisabled()">
+        </div>
+      
+        <div class="form-group">
+        <label for="Arival_Evng" class="control-label">Enter Arival_Evng Seperated by Comma</label> <input type="text" class="form-control" id="Arival_Evng" ng-model="vehicleListDetails.Arival_Evng" ng-disabled="isDisabled()">
+        </div>
+      
+        <div class="form-group">
+        <label for="Departure_Evng" class="control-label">Enter Departure_Evng Seperated by Comma</label> <input type="text" class="form-control" id=Departure_Evng ng-model="vehicleListDetails.Departure_Evng" ng-disabled="isDisabled()">
+        </div>
+      
+      </div>
+      
+           
+  
+       
+     
+     </form>
+        </div>
+        </div>
+      </div>
+    </div>     
+            

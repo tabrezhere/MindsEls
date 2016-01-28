@@ -35,6 +35,7 @@
 				       	  	});
 					
 						
+						 
 						
 						
 						 $scope.showUserModal = function(vehicleId){
@@ -58,6 +59,9 @@
 							$scope.editVehicleFlag = false;
 							
 						};
+
+
+						
 
 					
 
