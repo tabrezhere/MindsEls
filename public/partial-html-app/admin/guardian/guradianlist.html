@@ -55,8 +55,9 @@
  
 			<tbody>
 				<tr dir-paginate="std in guardianList|itemsPerPage:10 | filter:searchguardian">
-				    <td>{{std.id}}</td>
-				   <td>{{ std.firstName }}</td>
+				    <td>{{std.user_id}}</td>
+				    <td><a ui-sref="notep">{{ std.firstName }}</a></td>
+				   
 					
 					<td>{{ std.middleName }}</td>
 					<td>{{ std.lastName }}</td>
@@ -72,11 +73,22 @@
 			            <span class="caret"></span>
 			        </button>
 			        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-			            <li ng-repeat="a in std.studentdetails"><a ui-sref="">{{a.FirstName}}</a><li>
+			            <li ng-repeat="a in student.studentdetails"><a ui-sref="">{{a.FirstName}}</a><li>
 			        </ul>
 			      </div>
 			      </td>
-			      
+			      <td>
+		     	     <div class="btn-group">
+					        <button type="button" class="btn btn-default">Action</button>
+					        <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
+					        <ul class="dropdown-menu">
+
+					             <li><a ui-sref="guardianProfile({guardianID : std.user_id })">Edit Guardian</a></li>
+					            <li><a ui-sref="guardianDelete({guardianID : std.user_id })">Delete Guardian</a></li>
+
+					        </ul>
+					    </div>
+		     	     </td> 
 				</tr>
 			</tbody>
 			<tfoot>

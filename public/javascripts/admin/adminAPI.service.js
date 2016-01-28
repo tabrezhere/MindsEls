@@ -36,7 +36,7 @@
             service.GetStudentListByCampusId = GetStudentListByCampusId;
             service.GetStaffListbyCampusId = GetStaffListbyCampusId;
             
-           
+          
             service.GetCampusList = GetCampusList;
             service.GetVehicleListbyCampusId =GetVehicleListbyCampusId;
             service.getTransportListById=getTransportListById;
@@ -47,11 +47,25 @@
             service.GetbookListbyCampusID=GetbookListbyCampusID;
             service.getAllsubjects=getAllsubjects;
             service.Getassigmentdetailsbyclassid=Getassigmentdetailsbyclassid;
+            service.getStaffUserById = getStaffUserById;
+            service.getGuardianUserById = getGuardianUserById;
+            service.getAllGuardianListByCampusId = getAllGuardianListByCampusId;
             return service;
             
           
             
             //Post Service 
+            function getStaffUserById(staffId) 
+            {       
+            console.log("Inside admin.staff.controller.js calling getStaffDetailsById api "+staffId);
+            return $http.get('auth/getStaffUserById/'+staffId).then(handleSuccess, handleError('Error Fetching Staff Details by Staff Id'));
+            } 
+
+            function getGuardianUserById(guardianId) 
+            {       
+            console.log("Inside admin.staff.controller.js calling getStaffDetailsById api "+guardianId);
+            return $http.get('auth/getGuardianUserById/'+guardianId).then(handleSuccess, handleError('Error Fetching Guardian Details by guardian Id'));
+            } 
             
             function createNewStudent(user) 
             {           	
@@ -111,7 +125,13 @@
             function GetStudentListByCampusId(campusid){
             	return $http.get('/auth/getStudentUserListByCampusId/'+campusid).then(handleSuccess, handleError('Error getting studentInfo'));
             }
+
+
+            function getAllGuardianListByCampusId(campusid){
+                return $http.get('/auth/getAllGuardianListByCampusId/'+campusid).then(handleSuccess, handleError('Error getting studentInfo'));
+            }
             
+           
             function GetclassTimetablebyClassId(classid)
             {
             	return $http.get('/auth/getClassTimeTableByClassId/'+classid).then(handleSuccess, handleError('Error getting class time table'));
@@ -126,8 +146,8 @@
                 return $http.get('/auth/getStudentVehicleDetailsByStudentAdmNum/'+adminno).then(handleSuccess, handleError('Error getting Vehicle Details'));
             }
             
-            function Getvehicleroutebyvid(vid) {
-                return $http.get('/auth/getVehicleRouteAndStopDetailsByVhId/'+vid).then(handleSuccess, handleError('Error getting Vehicle Route Details'));
+            function Getvehicleroutebyvid(vehicleId) {
+                return $http.get('/auth/getVehicleAndRoutesByVhId/'+vehicleId).then(handleSuccess, handleError('Error getting Vehicle Route Details'));
             }
             
             
