@@ -28,7 +28,7 @@ theApp
 				                	'/getreddash',
 								{
 									templateUrl : '/assets/partial-html-app/angulartemplate/home.html'
-								})
+								})stude
 
 							.when(
 									'/new_login',
@@ -446,7 +446,7 @@ theApp
 								
 								    templateUrl: '/assets/partial-html-app/admin/transportation/updatevechilelist.html',
 								    params : { vehicleID: null },
-								 controller: 'AdminVehicleEditController'
+								 controller: 'AdminTransportEditController'
 							})	
 
 							.state(
@@ -516,6 +516,7 @@ theApp
 							.state(
 									'StudentProfile',
 									{
+										//need to commit this changes
 										templateUrl : '/assets/partial-html-app/admin/student/studentProfile.html',
 										params : { studentID: null },
 								 controller: 'AdminStudentUpdateController'
@@ -523,7 +524,7 @@ theApp
 									})
 
 							.state("studentUpdate", {
-								
+								//need to commit this changes
 								    templateUrl: '/assets/partial-html-app/admin/student/studentupdate.html',
 								    params : { studentID: null },
 								 controller: 'AdminStudentUpdateController'
