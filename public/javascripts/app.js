@@ -390,7 +390,7 @@ theApp
 										controller : 'AdminStaffController'
 									})
 	
-									
+								//commit app.js for update staff	
 							.state(
 									'StaffProfile',
 									{
