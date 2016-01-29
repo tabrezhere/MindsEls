@@ -1,6 +1,0 @@
-eclipse
-activator
-eclipse
-testOnly UserServiceSpec --
-testOnly MiscServiceSpec --
-Eonline
